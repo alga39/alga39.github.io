@@ -1,2 +1,2 @@
-# alga39.github.io
+# Александр Галкин
 First site
