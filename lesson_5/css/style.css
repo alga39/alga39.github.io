@@ -1,0 +1,28 @@
+h1, h2, h3{
+text-align: center;}
+.title{
+	border: 2px solid red;
+}
+.stitle{
+	font-weight: bold;
+	text-decoration: underline;
+	text-align: center;
+}
+.tell1{
+	background: red;
+}
+.tell2{
+	background: aquamarine;
+}
+.tell3{
+	background: Teal;
+}
+.tell4{
+	background: OliveDrab;
+}
+.tell5{
+	background: Khaki;
+}
+.tell6{
+	background: MediumAquamarine;
+}
