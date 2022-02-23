@@ -1,0 +1,95 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: Tahoma;
+	line-height: 1.5;
+	color: #333333;
+}
+.header{
+margin-top: 90px;
+text-align: center;
+font-size: 21px;
+}
+.header span{
+	display: block;
+	font-weight: 300;
+}
+.header strong{
+	font-weight: 800;
+	text-transform: uppercase;
+}
+.media{
+	margin-top: 85px;
+	text-align: center;
+}
+.video, .form{
+display: inline-block;
+vertical-align: top;
+}
+.form{
+	border: 5px solid #2727d9;
+	height: 300px;
+	width: 350px;
+	margin-left: 30px;
+
+}
+.formtxt{
+	font-weight: 800;
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.form input{
+	width: 300px;
+	height: 50px;
+	margin-top: 10px;
+	padding-left: 20px;
+}
+.btn{
+	background-color: #2727d9;
+	border: none;
+	color: white;
+	font-size: 18px;
+	height: 65px;
+	width: 300px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+.sectheader{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 800;
+	margin-top: 70px;
+}
+.sectpict{
+	text-align: center;
+	margin-top: 50px;
+}
+.pict{
+	text-align: center;
+	display: inline-block;
+	font-size: 12px;
+	margin-right: 10px;
+}
+.pict p{
+	font-weight: 800;
+}
+.sectionbtn{
+	text-align: center;
+margin-top: 70px;}
+.sectclnt{
+	display: inline-block;
+	text-align: center;
+	margin-right: 15px;
+	margin-bottom: 20px;
+}
+.sectclnt img{
+	height: 180px;
+	width: 200px;
+}
+.clnpict{
+	text-align: center;
+}
