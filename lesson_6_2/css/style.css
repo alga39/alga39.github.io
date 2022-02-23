@@ -1,0 +1,18 @@
+.cntr{
+	height: 200px;
+	width: 400px;
+	border: 2px solid gray;
+	position: fixed;
+	left: 50%;
+	margin-left: -200px;
+	top: 50%;
+	margin-top: -100px;
+	/*padding-bottom: 20px;*/
+	padding: 20px 30px 20px 30px;
+}
+
+.txt{
+
+	text-align: justify;
+	color: darkred;
+}
