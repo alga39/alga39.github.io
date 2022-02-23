@@ -1,0 +1,49 @@
+.title{
+	font-size: 18px;
+	margin-top: 125px;
+	line-height: 1.5;
+}
+.title span{
+	display: block;
+}
+.form{
+	border: 5px solid #2727d9;
+}
+.form-title{
+	font-size: 20px;
+	font-weight: 800;
+margin-bottom: 40px;
+}
+.form{
+	padding: 30px 20px;
+}
+.form-text{
+	margin-bottom: 10px;
+}
+.img-box{
+font-weight: 800;
+line-height: 1;
+height: 150px;
+}
+.img-box span{
+display: block;
+margin-top: 20px;
+}
+.btn-bot{
+	margin-top: 100px;
+}
+.title-cli{
+	margin-top: 100px;
+	margin-bottom: 65px;
+	font-weight: 800;
+	font-size: 20px;
+}
+.img-cli{
+	margin-top: 10px;
+}
+.video{
+	margin-bottom: 30px;
+}
+.cli-box{
+	margin-bottom: 10px;
+}
