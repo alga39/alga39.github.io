@@ -1,0 +1,33 @@
+.form{
+height: 247px;
+width: 213px;
+border: 1px solid #01baba;
+margin-left: 300px;
+margin-top: 150px;
+padding-top: 27px;
+padding-left: 18px;
+padding-right: 19px;
+
+}
+.form-text{
+	font-size: 8px;
+	font-weight: 600;
+}
+.form-input{
+margin-top: 4px;
+margin-bottom: 4px;
+}
+.form-style{
+display: block;
+  width: 100%;
+  height: 21px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+.btn-fin{
+	margin-top: 25px;
+}
