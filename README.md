@@ -10,5 +10,6 @@ ___
 5. [Урок №7](https://alga39.github.io/lesson_7/ "Верстка первого макета") - Верстка первого макета
 6. [Урок №8](https://alga39.github.io/lesson_8/ "Ускорение верстки в разы") - Ускорение верстки в разы 
 7. [Урок №9](https://alga39.github.io/lesson_9/ "Верстка при помощи Bootstrap") - Верстка при помощи Bootstrap
-8. [Практика. Часть 1](https://alga39.github.io/module_5-practice_1/ "Модуль 5. Практика 1") - Практика 1
+8. [Урок №13](https://alga39.github.io/lesson_13/ "Верстка при помощи Bootstrap") - Адаптивная верстка
+9. [Практика. Часть 1](https://alga39.github.io/module_5-practice_1/ "Модуль 5. Практика 1") - Практика 1
 
