@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <!-- Bootstrap core CSS -->
+    <!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+ </head>
+
+  <body>
+<div class="container">
+   <button class="btn btn-success" data-toggle="modal" data-target="#tsk">Тестовая кнопка</button>
+</div>
+   <!-- Model window -->
+   <div class="modal fade" id="tsk">
+    <!-- Само белое модальное окно -->
+  <div class="modal-dialog" role="document">
+    <!-- Содержимое модального окна -->
+    <div class="modal-content">
+      <!-- Шапка модального окна -->
+      <div class="modal-header">
+        <!-- кнопака закрыть -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <!-- заголовок -->
+        <h4 class="modal-title">Внимание</h4>
+      </div>
+      <!-- тело мадального окна -->
+      <div class="modal-body">
+        <p>Вы действительно хотите удалить файл?&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Нет</button>
+        <button type="button" class="btn btn-primary">Да</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+</html>
