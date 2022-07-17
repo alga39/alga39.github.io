@@ -1,0 +1,43 @@
+/*Fonts*/
+@font-face {
+  font-family: 'Ubuntu_reg';
+  src: url('../fonts/Ubuntu-Regular.woff2') format('woff2'), url('../fonts/Ubuntu-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ubuntu_bold';
+  src: url('../fonts/Ubuntu-Bold.woff2') format('woff2'), url('../fonts/Ubuntu-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+.bold {
+  font-family: 'Ubuntu_bold';
+}
+/*Colors*/
+/*Basic settings*/
+html {
+  font-size: 10px;
+}
+/*Typography*/
+.header {
+  font-family: 'Ubuntu_bold';
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 8rem;
+  color: #0bbaf0;
+  font-size: 2.5rem;
+}
+.header_sub {
+  text-transform: uppercase;
+  text-align: center;
+  color: #0bbaf0;
+  font-size: 1.7rem;
+  margin-bottom: 5.7rem;
+}
+.main {
+  background: #ffffff url(../img/bg.png) center center;
+  padding-bottom: 8rem;
+}
