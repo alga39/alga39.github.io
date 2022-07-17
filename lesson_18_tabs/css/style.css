@@ -15,6 +15,7 @@
 /*form colors*/
 .main {
   padding: 0rem 0 14rem;
+  padding-top: 3rem;
   background: url(../img/bg.png) center center no-repeat;
 }
 .registration {
