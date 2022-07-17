@@ -18,3 +18,5 @@ ___
 15. [Урок №16](https://alga39.github.io/module_5-practice_4/ "Верстка блока с преимуществами. Слайдер.") - Слайдер 
 16. [Урок №17](https://alga39.github.io/lesson_17/ "Всплывающие окна") - Всплывающие окна
 17. [Урок №18](https://alga39.github.io/module_5-practice_5/ "Верстка всплывающих окон на сайте") - Практика 4
+18. [Урок №18](https://alga39.github.io/lesson_18_tabs/ "Табы") - Табы
+18. [Урок №18](https://alga39.github.io/lesson_18_carousel/ "Аккорлдионы") - Аккордионы
