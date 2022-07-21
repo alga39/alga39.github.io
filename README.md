@@ -21,3 +21,4 @@ ___
 18. [Урок №18](https://alga39.github.io/lesson_18_tabs/ "Табы") - Табы
 18. [Урок №18](https://alga39.github.io/lesson_18_carousel/ "Аккордионы") - Аккордионы
 19. [Практика](https://alga39.github.io/module_5-practice_6/ "Верстка блока с ценами") - Верстка блока с ценами
+19. [Урок №19](https://alga39.github.io/lesson_19/ "Анимирование элементов формы") - Анимирование элементов формы
