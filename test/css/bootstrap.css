@@ -256,11 +256,11 @@ th {
   }
   .table td,
   .table th {
-    background-color: #fff !important;
+    background-color: #fdc300 !important;
   }
   .table-bordered th,
   .table-bordered td {
-    border: 1px solid #ddd !important;
+    border: 1px solid #fdc300 !important;
   }
 }
 @font-face {
@@ -2402,7 +2402,7 @@ th {
   border-top: 2px solid #ddd;
 }
 .table .table {
-  background-color: #fff;
+  background-color: #fdc300;
 }
 .table-condensed > thead > tr > th,
 .table-condensed > tbody > tr > th,
@@ -2421,7 +2421,7 @@ th {
 .table-bordered > thead > tr > td,
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > td {
-  border: 1px solid #ddd;
+  border: 2px solid #fdc300;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > thead > tr > td {

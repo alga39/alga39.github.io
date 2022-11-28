@@ -6,6 +6,16 @@
     font-style: normal;
     font-display: swap;
 }
+@keyframes header_show {
+	0%{
+		opacity: 0;
+		top: -70px;
+	}
+	100%{
+		opacity: 1;
+		top: 0;
+	}
+}
 
 @font-face {
     font-family: 'Roboto';
@@ -19,8 +29,18 @@ html{
 	font-size: 10px;
 }
 .main{
-	padding-top: 5rem;
+	/*padding-top: 5rem;*/
 	background: #000000;
+}
+.stick_block{
+	width: 100%;
+	background: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	animation-name: header_show;
+	animation-duration: 1s;
 }
 .header{
 	background: url(../img/bg-main.png) center center no-repeat;
@@ -121,38 +141,62 @@ margin-bottom: 4rem;
 .zapis{
 	background: white;
 	&_header{
-		font-family: 'Oranienbaum';
-		font-size: 2rem;
+		background: #ffd100;
+		font-family: 'Roboto';
+		font-size: 1.8rem;
 		font-weight: 600;
 		color: #303030;
-		height: 10rem;
 	}
-	&_paket{
+	&_headerlft{
+		width: 40%;
+		text-align: left;
+	}
+	&_headerrgh{
+		width: 20%;
+	}
+	&_txt{
 		font-family: 'Roboto';
+		font-size: 1.2rem;
 		font-weight: 600;
-		font-size: 1.5rem;
-		color: #303030;
-		background: #d8f0d8;
+		text-align: left;
+		background: #fff000;
 	}
-	&_servis{
-		font-family: 'Roboto';
-		font-size: 1.5rem;
-		color: #7d7d7d;
+	&_txtrgh{
+		text-align: center;
+		&_mes{
+			text-align: center;
+		}
+		&_mes span{
+			font-size: 1rem;
+		}
 	}
-	&_servis span{
+	&_txtrgh span{
 		font-weight: 600;
 		font-size: 2rem;
 		color: #2c2c2c;
 	}
+	&_currancy{
+		display: flex;
+		justify-content: center;
+
+		&_block{
+		display: inline;
+		border: 1px solid black;
+		padding: 0.1rem 0.4rem 0 0.4rem;
+		margin: 2rem 0.3rem 1rem 0;
+	}
+	}
+	
 }
 .btn_serv{
-	background: #ff0c3a;
+	width: 100%;
+	background: #000000;
 	border: none;
-	padding: 2rem 5rem 2rem 5rem;
-	margin: 2rem 0 2rem 0;
-	color: #fbdef2;
+	padding: 1rem 0 1rem 0;
+	margin: 2rem 0 1rem 0;
+	color: white;
 	text-transform: uppercase;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	font-family: 'Roboto';
 }
 .book{
@@ -160,6 +204,10 @@ margin-bottom: 4rem;
 	width: 100%; 
 	height: auto;
 }
+.paket{
+	font-family: 'Roboto';
+	background: white;
+	}
 .paket_header{
 	background: white;
 	text-transform: uppercase;
@@ -168,11 +216,7 @@ margin-bottom: 4rem;
 	text-align: center;
 	padding: 3rem 0 3rem 0;
 }
-.paket{
-	font-family: 'Roboto';
-	background: white;
-	/*padding-left: 4rem;*/
-}
+
 .bord{
 	margin: 0 4rem 0 4rem;
 	border: 3px solid #e6e6e6;
@@ -208,6 +252,11 @@ margin-bottom: 4rem;
 	font-size: 1.5rem;
 	font-family: 'Roboto';
 	}
+}
+.bord:hover{
+	-webkit-box-shadow: 0px -2px 14px 10px rgba(34, 60, 80, 0.05);
+	-moz-box-shadow: 0px -2px 14px 10px rgba(34, 60, 80, 0.05);
+	box-shadow: 0px -2px 14px 10px rgba(34, 60, 80, 0.05);
 }
 del {
 	position: relative;

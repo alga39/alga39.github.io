@@ -6,13 +6,15 @@
 	<title>Test</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+/>
 </head>
 <body>
 <main class="main">
 	<div class="container">
 		<div class="header" id="top">
-			<div class="row">
+			<div class="stick">
+				<div class="row">
 				<div class="col-lg-5 col-md-5 col-sm-7 col-xs-7">
 					<div class="header_line">
 						<div class="header_line_list"><a href="#">Блог</a></div>
@@ -37,6 +39,7 @@
 						<br>+7(499)350-23-35
 					</div>
 				</div>
+			</div>
 			</div>
 			<div class="logo">
 				<div class="logo_img">
@@ -109,36 +112,54 @@
 			<div class="row">
 				<div class="col-lg-8 col-md-8 col-sm-10 col-xs-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-1">
 					<table class="table table-bordered">
-						<tr>
-							<td colspan="3" class="zapis_header">Записывайтесь прямо сейчас</td>
+						<tr class="zapis_header">
+							<td class="zapis_headerlft">ВЫ ПОЛУЧАЕТЕ</td>
+							<td class="zapis_headerrgh">ТЕОРИЯ</td>
+							<td class="zapis_headerrgh">ПРАКТИКА</td>
+							<td class="zapis_headerrgh">VIP</td>
 						</tr>
-						<tr class="zapis_paket">
-							<td>Пакет "Попробовать"</td>
-							<td>Пакет 1 день</td>
-							<td>Пакет 1 месяц</td>
+						<tr class="zapis_txt">
+							<td>Все материалы тренинга</td>
+							<td class="zapis_txtrgh"><span>&#10004;</span></td>
+							<td class="zapis_txtrgh"><span>&#10004;</span></td>
+							<td class="zapis_txtrgh"><span>&#10004;</span></td>
 						</tr>
-						<tr class="zapis_servis">
-							<td>
-								<span>&#10004;</span><br> 5 ваших луков или 5 вопросов в пределах 24 часов
-							</td>
-							<td>
-								<span>&#10004;</span><br> Советы стилиста в пределах 24 часов
-							</td>
-							<td>
-								<span>&#10004;</span><br> Советы в пределах месяца
-							</td>
+						<tr class="zapis_txt">
+							<td>Проверка ДЗ</td>
+							<td class="zapis_txtrgh"><span>-</span></td>
+							<td class="zapis_txtrgh_mes">2,5 месяца <span>имиджмейкером команды Гламурненько.ру</span></td>
+							<td class="zapis_txtrgh_mes">2,5 месяца <span>*лично Екатериной Маляровой</td>
+						</span></tr>
+						<tr class="zapis_txt">
+							<td>Тренажер по стилевым типажам</td>
+							<td class="zapis_txtrgh"><span>-</span></td>
+							<td class="zapis_txtrgh"><span>&#10004;</span></td>
+							<td class="zapis_txtrgh"><span>&#10004;</span></td>
 						</tr>
-						<tr class="zapis_servis">
-							<td>5 вопросов/комплектов на оценку</td>
-							<td>до 100 вопросов/комплектов на оценку</td>
-							<td>неограниченно вопросов/комплектов на оценку</td>
+						<tr class="zapis_txt">
+							<td>Тренажер по вещам и образцам</td>
+							<td class="zapis_txtrgh"><span>-</span></td>
+							<td class="zapis_txtrgh"><span>&#10004;</span></td>
+							<td class="zapis_txtrgh"><span>&#10004;</span></td>
 						</tr>
-						<tr class="zapis_servis">
-							<td>499 рублей</td>
-							<td>2900 рублей</td>
-							<td>9900 рублей</td>
+						<tr class="zapis_header">
+							<td class="zapis_headerlft">Цена</td>
+							<td class="zapis_headerrgh">7 990 &#8381;</td>
+							<td class="zapis_headerrgh">9 990 &#8381;</td>
+							<td class="zapis_headerrgh">24 990 &#8381;</td>
 						</tr>
-						<tr>
+						<tr class="zapis_txt">
+							<td></td>
+							<td class="zapis_txtrgh" colspan="3">
+								<div class="zapis_currancy">
+									<div class="zapis_currancy_block">&#8381;</div>
+									<div class="zapis_currancy_block">&#8362;</div>
+									<div class="zapis_currancy_block">&#36;</div>
+									<div class="zapis_currancy_block">&#8364;</div>
+								</div></td>
+						</tr>
+						<tr class="zapis_txt">
+							<td></td>
 							<td><button class="btn_serv">Заказать</button></td>
 							<td><button class="btn_serv">Заказать</button></td>
  							<td><button class="btn_serv">Заказать</button></td>
@@ -223,7 +244,7 @@
 		<div class="kak_rabot_otz">
 			<div class="row">
 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-1">
-					<img class="kak_rabot_img" src="img/chat_1.jpg" alt="">
+					<a href="img/chat_1.jpg" data-fancybox="gallery"><img class="kak_rabot_img" src="img/chat_1.jpg" alt=""></a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-7">
 					<div class="kak_rabot_txt">
@@ -235,7 +256,9 @@
 		<div class="kak_rabot_otz">
 			<div class="row">
 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-1">
-					<img class="kak_rabot_img" src="img/chat_2.jpg" alt="">
+					<a href="img/chat_2.jpg" data-fancybox="gallery">
+						<img class="kak_rabot_img" src="img/chat_2.jpg" alt="">
+					</a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-7">
 					<div class="kak_rabot_txt">
@@ -247,7 +270,9 @@
 		<div class="kak_rabot_otz">
 			<div class="row">
 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-1">
-					<img class="kak_rabot_img" src="img/chat_3.jpg" alt="">
+					<a href="img/chat_3.jpg" data-fancybox="gallery">
+						<img class="kak_rabot_img" src="img/chat_3.jpg" alt="">
+					</a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-7">
 					<div class="kak_rabot_txt">
@@ -259,7 +284,9 @@
 		<div class="kak_rabot_otz">
 			<div class="row">
 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-1">
-					<img class="kak_rabot_img" src="img/chat_4.jpg" alt="">
+					<a href="img/chat_4.jpg" data-fancybox="gallery">
+						<img class="kak_rabot_img" src="img/chat_4.jpg"alt="">
+					</a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-7">
 					<div class="kak_rabot_txt">
@@ -285,5 +312,8 @@
 	</div>
 	</div>
 </main>
+<script src="js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 </body>
 </html>
