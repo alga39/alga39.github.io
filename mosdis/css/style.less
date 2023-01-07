@@ -1,0 +1,248 @@
+html {
+scroll-behavior: smooth;
+}
+.header_top{
+	padding: 10px 0 0 0;
+}
+.link{
+	margin-top: 2px;
+	/*margin-bottom: -4px;*/
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+}
+.link span{
+	color: #000;
+	font-weight: 600;
+}
+.link a{
+	text-decoration: none;
+	color: #808080;
+}
+.link a:hover{
+	color: #808080;
+	text-decoration: none;
+}
+.prof{
+	background: -webkit-linear-gradient(45deg, rgb(190, 220, 195), rgb(86, 181, 184));
+	background: -moz-linear-gradient(45deg, rgb(190, 220, 195), rgb(86, 181, 184));
+	background: linear-gradient(45deg, rgb(190, 220, 195), rgb(86, 181, 184));
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+  	min-height: 100vh;
+  	padding-top: 50px;
+  	&_text{
+  		font-size: 20px;
+  		margin-bottom: 40px;
+  	}
+  	&_header{
+  		font-size: 50px;
+  		line-height: 50px;
+  		margin-bottom: 40px;
+  	}
+  	&_servis{
+  		text-align: center;
+  	}
+  	&_btn{
+  		width: 90%;
+  		margin-top: 30px;
+  		border: none;
+  		border-radius: 20px;
+  		padding: 10px 100px;
+  		font-weight: 600;
+  	}
+  	&_btn:hover{
+  		background: #ADD8E6;
+  	}
+  	
+  }
+  .inform{
+  	&_header{
+  		text-transform: uppercase;
+  		text-align: center;
+  	}
+  	&_list{
+  		background: -webkit-linear-gradient(45deg, rgb(190, 220, 195), rgb(86, 181, 184));
+		background: -moz-linear-gradient(45deg, rgb(190, 220, 195), rgb(86, 181, 184));
+		background: linear-gradient(45deg, rgb(190, 220, 195), rgb(86, 181, 184));
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+  		min-height: 100vh;
+  		padding-top: 30px;
+  	}
+  	&_img{
+  		margin-top: 20px;
+  		position: relative;
+  	}
+  	&_img2{
+  		position: absolute;
+  		top: 190px;
+  		right: 1px;
+  	}
+  	&_text{
+  		padding-top: 20px;
+  		color: white;
+  		&_cont{
+  			/*text-align: justify;*/
+  			/*padding-right: 240px;*/
+  			font-size: 16px;
+  			line-height: 20px;
+  		}
+  	}
+  }
+  .menulist_header{
+  	margin: 10px 0;
+  	text-align: center;
+  	font-weight: 600;
+  	text-transform: uppercase;
+  }
+  .menulist_btn{
+  	text-transform: uppercase;
+  	background: none;
+  	border: none;
+  }
+  .menulist_btn:hover{
+  	border: 1px solid black;
+  	border-radius: 20px;
+  	background: #ADD8E6;
+  }
+  .footer{
+  	background: -webkit-linear-gradient(45deg, rgb(190, 220, 195), rgb(86, 181, 184));
+	background: -moz-linear-gradient(45deg, rgb(190, 220, 195), rgb(86, 181, 184));
+	background: linear-gradient(45deg, rgb(190, 220, 195), rgb(86, 181, 184));
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+	font-weight: 600;
+	&_btn1{
+		width: 50%;
+  		margin: 40px 0;
+  		border: none;
+  		border-radius: 20px;
+  		padding: 5px 30px;
+  	}
+  	&_btn2{
+		width: 30%;
+  		margin-top: 45px;
+  		border: none;
+  		border-radius: 20px;
+  		padding: 5px 30px;
+  	}
+  	&_btn1:hover{
+  		background: #ADD8E6;
+  	}
+  	&_btn2:hover{
+  		background: #ADD8E6;
+  	}
+}
+@media(max-width: 1199px) {
+	.inform_img1{
+		height: 250px;
+		width: 250px;
+	}
+	.inform_img2{
+		height: 250px;
+		width: 250px;
+	}
+	}
+@media(max-width: 991px){
+	.prof_text{
+	margin-bottom: 20px;	
+	}
+	.prof_header{
+		margin-bottom: 10px;
+	}
+	.prof_btn{
+		padding: 10px 30px;
+		margin-top: 10px;
+	}
+	.prof_img{
+		height: 350px;
+		width: 350px;
+	}
+	.inform_text{
+		padding-top:30px;
+	}
+	.inform_img{
+		margin-top: 100px;
+	}
+	.inform_img1{
+		height: 150px;
+		width: 150px;
+	}
+	.inform_img2{
+		top: 170px;
+		right: 10px;
+		height: 150px;
+		width: 150px;
+	}	
+	.footer_btn1{
+		width: 70%;
+  		padding: 5px 5px;
+	}
+	.footer_btn2{
+		width: 40%;
+  	}
+}
+@media (max-width: 767px) {
+	.logo_img{
+		height: 15px;
+		width: 80px;
+	}
+	.link{
+	gap: 7px;
+	font-size: 12px;
+	}
+	.prof{
+		text-align: center;
+	}
+	.prof_header{
+		font-size: 30px;
+		font-weight: 600;
+		line-height: 30px;
+	}
+	.prof_btn{
+		padding: 5px 10px;	
+	}
+	.prof_img{
+		margin: 10px 0;
+	}
+	.inform_img{
+		margin-top: 120px;
+	}
+	.inform_img1{
+		height: 100px;
+		width: 100px;
+	}
+	.inform_img2{
+		top: 130px;
+		left: -5px;
+		height: 100px;
+		width: 100px;
+	}
+	.inform_text{
+		padding-top:50px;
+	}
+	.inform_text h2{
+		font-size: 14px;
+		font-weight: 600;
+	}
+	.inform_list{
+		padding-top:10px;
+	}
+	.inform_text_cont{
+		font-size: 14px;
+	}
+	.footer_btn1{
+		width: 100%;
+  		padding: 5px 5px;
+	}
+	.footer_btn2{
+		width: 70%;
+		margin-top: 60px;
+  	}
+}
+  
