@@ -119,7 +119,8 @@
 	color: #b5b5b5;
 }
 @media (max-width: 1200px){
-	.title, .category_title{
+	.title, 
+	.category_title{
 		display: none;
 	}
 	.category_btn{
