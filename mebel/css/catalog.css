@@ -5,6 +5,9 @@
 .title_count{
 	color: #aeaeae;
 }
+.cont_part{
+	font-weight: 700;
+}
 .category_list_text{
 	font-size: 12px;
 	padding-bottom: 15px;
@@ -23,6 +26,9 @@
 .category_box{
 	position: relative;
 	min-height: 500px;
+}
+.category_box_list{
+	padding-left: 0;
 }
 .category_box_item{
 	width: 100%;
@@ -113,6 +119,9 @@
 	color: #b5b5b5;
 }
 @media (max-width: 1200px){
+	.title, .category_title{
+		display: none;
+	}
 	.category_btn{
 		display: none;
 	}
