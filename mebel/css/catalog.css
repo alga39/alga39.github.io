@@ -114,8 +114,11 @@
 }
 @media (max-width: 1200px){
 	.category_btn{
-		opacity: 0;
+		display: none;
 	}
+	.category_desc{
+	grid-template-columns: auto;
+}
 	.list_box{
 	display: flex;
 	justify-content: center;
@@ -132,7 +135,7 @@
 }
 @media (max-width: 770px){
 	.category_desc{
-	grid-template-columns: 200px auto;
+	grid-template-columns: auto;
 }
 @media (max-width: 700px){
 	.category_box{
@@ -148,7 +151,7 @@
 }
 @media (max-width: 510px){
 	.category_desc{
-	grid-template-columns: 150px auto;
+	grid-template-columns: auto;
 }
 @media (max-width: 400px) {
 	.category_box{
