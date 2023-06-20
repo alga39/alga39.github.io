@@ -49,24 +49,27 @@
 }
 .category_desc{
 	display: grid;
-	grid-template-columns: 250px auto;
+	grid-template-columns: 317px auto;
 }
 .category_btn{
 	display: flex;
 	flex-direction: column;
 	align-items: start;
-	margin-right: 40px;
+	margin-right: 60px;
 }
 .category_btn_item{
 	color: #000;
 	margin-bottom: 5px;
 	background-color: transparent;
-	border-bottom: 1px solid #000;
+	border-bottom: 1px solid #dee2e6;
 	cursor: pointer;
-	font-size: 12px;
+	font-size: 16px;
 	text-align: left;
-	padding: 15px 5px;
+	padding: 15px 5px 5px 5px;
 	width: 100%;
+}
+.category_box{
+	margin-left: 20px;
 }
 .category_btn_item_active{
 	font-weight: 700;
@@ -133,6 +136,9 @@
 	.category_btn{
 		display: none;
 	}
+	.category_box{
+	margin-left: 0px;
+}
 	.category_desc{
 	grid-template-columns: auto;
 }
