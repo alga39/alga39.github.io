@@ -159,6 +159,9 @@
     border: 1px solid #000;
     font-size: 10px;
 }
+.hide{
+	display: none;
+}
 .category_img{
 	height: 200px;
 }
