@@ -45,27 +45,26 @@
 	font-weight: 700;
 	font-size: 14px;
 	text-align: center;
+	padding-top: 20px;
 }
 .category_desc{
 	display: grid;
-	grid-template-columns: 250px auto;
-}
-.category_box{
-	
+	grid-template-columns: 230px auto;
 }
 .category_btn{
 	display: flex;
 	flex-direction: column;
 	align-items: start;
-	margin-right: 10px;
+	margin-right: 40px;
 }
 .category_btn_item{
 	color: #000;
 	margin-bottom: 5px;
 	background-color: transparent;
-	border: 1px solid #000;
+	border-bottom: 1px solid #000;
 	cursor: pointer;
 	font-size: 12px;
+	text-align: left;
 	padding: 15px 5px;
 	width: 100%;
 }
