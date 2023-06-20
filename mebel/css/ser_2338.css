@@ -48,7 +48,7 @@
 }
 .category_desc{
 	display: grid;
-	grid-template-columns: 187px auto;
+	grid-template-columns: 250px auto;
 }
 .category_box{
 	
@@ -57,15 +57,17 @@
 	display: flex;
 	flex-direction: column;
 	align-items: start;
+	margin-right: 10px;
 }
 .category_btn_item{
 	color: #000;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 	background-color: transparent;
-	border: none;
+	border: 1px solid #000;
 	cursor: pointer;
 	font-size: 12px;
-	padding: 0;
+	padding: 15px 5px;
+	width: 100%;
 }
 .category_btn_item_active{
 	font-weight: 700;
