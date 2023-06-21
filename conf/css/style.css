@@ -1,0 +1,9 @@
+.container{
+	max-width: 1220px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+header{
+	background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,145,190,1) 0%, rgba(18,80,176,1) 0%, rgba(43,118,134,1) 0%, rgba(5,145,190,1) 0%, rgba(5,144,189,1) 0%, rgba(13,16,134,1) 0%, rgba(55,129,163,1) 48%, rgba(13,16,134,1) 100%, rgba(4,151,196,1) 100%);
+}

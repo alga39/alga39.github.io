@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Оплата услуг</title>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<a href="" class="logo"><img src="img/logo.svg" alt=""></a>
+		</div>
+	</header>
+	<h1>Выбор модулей</h1>
+
+    <form id="course-form">
+        <div class="course-list">
+            <div class="course-item">
+                <input type="checkbox" class="course-select" data-articul="01" data-prepay="1000" data-extra-pay="1392" />
+                <span class="course-articul">01</span>
+                <span class="course-name">Навыки публичных выступлений</span>
+            </div>
+            <div class="course-item">
+                <input type="checkbox" class="course-select" data-articul="02" data-prepay="1000" data-extra-pay="1392" />
+                <span class="course-articul">02</span>
+                <span class="course-name">Убедительная коммуникация</span>
+            </div>
+            <div class="course-item">
+                <input type="checkbox" class="course-select" data-articul="03" data-prepay="1000" data-extra-pay="1392" />
+                <span class="course-articul">03</span>
+                <span class="course-name">Партнерское взаимодействие</span>
+            </div>
+        </div>
+
+        <div id="total-amount">
+            <!-- Здесь будет отображаться общая сумма и количество выбранных курсов -->
+        </div>
+
+        <div id="payment-button">
+            <a id="payment-link" href="#">Оплатить</a>
+        </div>
+    </form>
+
+<script>
+    document.querySelector('#course-form').addEventListener('change', function() {
+    	
+        var selectedCourses = Array.from(document.querySelectorAll('.course-select:checked'));
+        var totalCourses = selectedCourses.length;
+        var totalPrepay = totalCourses * 1000;
+        var totalExtraPay = totalCourses * 1392;
+        var totalSavings = totalCourses * 598;
+        var totalArticuls = selectedCourses.map(function(checkbox) { return checkbox.dataset.articul; }).join(',');
+
+        var totalText = 'Вы выбрали ' + totalCourses + ' модулей. К оплате сейчас: ' + totalPrepay + ' руб. Сумма доплаты: ' + totalExtraPay + ' руб. Ваша экономия: ' + totalSavings + ' руб.';
+        document.querySelector('#total-amount').innerText = totalText;
+
+        var universalStart = 'https://auth.robokassa.ru/Merchant/Index.aspx?MerchantLogin=hsedays&InvId=0&Culture=ru&Encoding=utf-8&OutSum=';
+        var universalMiddle1 = '.00&Receipt=%7B%22items%22%3A%5B%7B%22name%22%3A%22%D0%A3%D1%81%D0%BB%D1%83%D0%B3%D0%B0%20%D0%BF%D0%BE%20%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%D0%B8%D1%8E%20%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%B8%D1%8F%20%D0%B2%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B5%20HSE%20DAYS.%20%D0%94%D0%BE%D1%81%D1%82%D1%83%D0%BF%20%D0%BA%20%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8F%D0%BC%20';
+        var universalMiddle2 = '%22%2C%22quantity%22%3A1%2C%22sum%22%3A';
+        var universalEnd = '%2C%22payment_method%22%3A%22full_payment%22%2C%22payment_object%22%3A%22payment%22%2C%22tax%22%3A%22none%22%7D%5D%7D&shp_interface=link&SignatureValue=c1834519a1109c81741544106020711d';
+        var paymentLink = document.querySelector('#payment-link');
+        var paymentHref = universalStart + encodeURIComponent(totalPrepay) + universalMiddle1 + encodeURIComponent(totalArticuls) + universalMiddle2 + encodeURIComponent(totalPrepay) + universalEnd;
+        
+        paymentLink.href = paymentHref;
+    });
+</script>
+
+</body>
+</html>
