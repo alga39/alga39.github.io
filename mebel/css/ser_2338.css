@@ -147,6 +147,9 @@
 	.category_box{
 		min-height: 760px;
 	}
+	.category_text_box{
+		padding: 0 10px;
+	}
 	.category_img{
 	height: 100px;
 }
