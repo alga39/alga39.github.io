@@ -55,7 +55,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,145,190,1) 0%, rgba
 	font-weight: 700;
     font-size: 14px;
     line-height: 120%;
-	padding: 10px 20px;
+	padding: 10px 30px;
 	-webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
@@ -126,4 +126,29 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,145,190,1) 0%, rgba
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+@media (max-width: 460px){
+	.course-articul{
+		font-size: 15px;
+	}
+	.course-name{
+		font-size: 15px;
+	}
+
+	.checkmark{
+		top: 6px;
+		height: 20px;
+		width: 20px;
+	}
+	.cont .checkmark:after {
+    left: 7px;
+    top: 2px;
+}
+.payment-button a{
+	padding-left: 20px;
+	padding-right: 20px; 
+}
+.title{
+	font-size: 24px;
+}
 }
