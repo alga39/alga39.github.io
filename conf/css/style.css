@@ -35,17 +35,26 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,145,190,1) 0%, rgba
 	display: flex;
 }
 .payment-button{
+
 	margin: 0 auto;
 }
 .payment-button a{
-	border: 1px solid red;
-	background: rgb(2,0,36);
-	background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(5,145,190,1) 0%, rgba(18,80,176,1) 0%, rgba(43,118,134,1) 0%, rgba(5,145,190,1) 0%, rgba(5,144,189,1) 0%, rgba(11,8,242,1) 0%, rgba(254,255,255,1) 100%, rgba(55,129,163,1) 100%, rgba(4,151,196,1) 100%);
-	border-radius: 5px;
-	color: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.15%, #1d70ff), color-stop(99.9%, #0450d2));
+    background: linear-gradient(180deg, #1d70ff 0.15%, #0450d2 99.9%);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
 	font-weight: 800;
 	font-size: 20px;
 	padding: 10px 20px;
+	    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
 }
 /*Test ChB*/
 .cont {
