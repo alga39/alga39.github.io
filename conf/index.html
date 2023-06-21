@@ -4,55 +4,55 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 	<title>Оплата услуг</title>
 </head>
 <body>
-	<header>
-		<div class="container">
-			<a href="" class="logo"><img src="img/logo.svg" alt=""></a>
-		</div>
-	</header>
     <main class="main">
         <div class="container">
             <h1 class="title">Выбор модулей</h1>
-        <form id="course-form">
-        <div class="course-list">
-            
-            <div class="course-item">
-                <label class="cont">
-                <input type="checkbox" class="course-select" data-articul="01" data-prepay="1000" data-extra-pay="1392" />
-                <span class="checkmark"></span>
-                <span class="course-articul">01</span>
-                <span class="course-name">Навыки публичных выступлений</span>
-            </label>
-            </div>
+            <form id="course-form">
+              <div class="course">
+                <div class="course-list">
+                    <div class="course-item">
+                      <label class="cont">
+                        <input type="checkbox" class="course-select" data-articul="01" data-prepay="1000" data-extra-pay="1392" />
+                        <span class="checkmark"></span>
+                        <span class="course-articul">01</span>
+                        <span class="course-name">Навыки публичных выступлений</span>
+                      </label>
+                    </div>
+                    <div class="course-item">
+                      <label class="cont">
+                        <input type="checkbox" class="course-select" data-articul="02" data-prepay="1000" data-extra-pay="1392" />
+                        <span class="checkmark"></span>
+                        <span class="course-articul">02</span>
+                        <span class="course-name">Убедительная коммуникация</span>
+                      </label>
+                    </div>
+                    <div class="course-item">
+                      <label class="cont">
+                        <input type="checkbox" class="course-select" data-articul="03" data-prepay="1000" data-extra-pay="1392" />
+                        <span class="checkmark"></span>
+                        <span class="course-articul">03</span>
+                        <span class="course-name">Партнерское взаимодействие</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="amount">
+                  <div id="total-amount" class="total-amount">
+                     <!-- Здесь будет отображаться общая сумма и количество выбранных курсов -->
+                  </div>
+                </div>
 
-
-
-            <div class="course-item">
-                <label class="cont">
-                <input type="checkbox" class="course-select" data-articul="02" data-prepay="1000" data-extra-pay="1392" />
-                <span class="checkmark"></span>
-                <span class="course-articul">02</span>
-                <span class="course-name">Убедительная коммуникация</span>
-            </label>
-            </div>
-
-            <div class="course-item">
-                <label class="cont">
-                <input type="checkbox" class="course-select" data-articul="03" data-prepay="1000" data-extra-pay="1392" />
-                <span class="checkmark"></span>
-                <span class="course-articul">03</span>
-                <span class="course-name">Партнерское взаимодействие</span>
-            </div>
-        </div>
-
-        <div id="total-amount">
-            <!-- Здесь будет отображаться общая сумма и количество выбранных курсов -->
-        </div>
-
-        <div id="payment-button">
+        
+        <div class="payment">
+        <div id="payment-button" class="payment-button">
             <a id="payment-link" href="#">Оплатить</a>
+        </div>
         </div>
     </form>
         </div>
@@ -67,7 +67,7 @@
         var totalSavings = totalCourses * 598;
         var totalArticuls = selectedCourses.map(function(checkbox) { return checkbox.dataset.articul; }).join(',');
 
-        var totalText = 'Вы выбрали ' + totalCourses + ' модулей. К оплате сейчас: ' + totalPrepay + ' руб. Сумма доплаты: ' + totalExtraPay + ' руб. Ваша экономия: ' + totalSavings + ' руб.';
+        var totalText = 'Вы выбрали: ' + totalCourses + ' модулей. К оплате сейчас: ' + totalPrepay + ' руб. Сумма доплаты: ' + totalExtraPay + ' руб. Ваша экономия: ' + totalSavings + ' руб.';
         document.querySelector('#total-amount').innerText = totalText;
 
         var universalStart = 'https://auth.robokassa.ru/Merchant/Index.aspx?MerchantLogin=hsedays&InvId=0&Culture=ru&Encoding=utf-8&OutSum=';

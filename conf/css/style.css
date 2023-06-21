@@ -1,3 +1,10 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+a{
+	color: transparent;
+	text-decoration: none;
+}
 .container{
 	max-width: 1220px;
 	padding: 0 10px;
@@ -9,6 +16,36 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,145,190,1) 0%, rgba
 }
 .title{
 	text-align: center;
+}
+.course{
+	display: flex;
+}
+.course-list{
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+.amount{
+	display: flex;
+}
+.total-amount{
+	margin: 0 auto;
+}
+.payment{
+	margin-top: 20px;
+	display: flex;
+}
+.payment-button{
+	margin: 0 auto;
+}
+.payment-button a{
+	border: 1px solid red;
+	background: rgb(2,0,36);
+	background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(5,145,190,1) 0%, rgba(18,80,176,1) 0%, rgba(43,118,134,1) 0%, rgba(5,145,190,1) 0%, rgba(5,144,189,1) 0%, rgba(11,8,242,1) 0%, rgba(254,255,255,1) 100%, rgba(55,129,163,1) 100%, rgba(4,151,196,1) 100%);
+	border-radius: 5px;
+	color: #fff;
+	font-weight: 800;
+	font-size: 20px;
+	padding: 10px 20px;
 }
 /*Test ChB*/
 .cont {
