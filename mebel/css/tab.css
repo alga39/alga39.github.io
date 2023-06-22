@@ -74,6 +74,11 @@
 .category_btn_item_active{
 	font-weight: 700;
 }
+.table_style{
+	text-align: center;
+	font-weight: 700;
+	width: 100px;
+}
 @media (max-width: 1200px){
 	.title, .category_title{
 		display: none;
