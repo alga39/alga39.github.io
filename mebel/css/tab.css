@@ -150,7 +150,7 @@ a:hover {
 	padding: 15px;
 	font-weight: 600;
 	max-height: 170px;
-	width: 265px;
+	width: 250px;
 	font-size: 12px;
 }
 .news_text_date{
@@ -231,7 +231,7 @@ a:hover {
 		grid-template-columns: repeat(1, 1fr);
 	}
 	.list_box{
-		min-height: 800px;
+		min-height: 540px;
 	}
 	.category_img{
 	height: 170px;
