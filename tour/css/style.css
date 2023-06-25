@@ -152,9 +152,9 @@ ul{
 }
 .footer_top{
 	grid-column: 2;
-	border-bottom: 20px solid transparent;
+	border-bottom: 30px solid transparent;
 	border-image: url(../img/bord_top.png);
-	border-image-slice: 40;
+	border-image-slice: 100;
   	border-image-repeat: stretch;
 }
 .footer_nav_item{
@@ -163,14 +163,20 @@ ul{
 	padding-left: 10px;
 	font-size: 18px;
 	display: flex;
+	padding: 15px;
+	align-items: center;
 }
 .footer_bot{
 	grid-column: 2;
-	border-top: 20px solid transparent;
+	border-top: 30px solid transparent;
 	border-image: url(../img/bord_bottom.png);
-	border-image-slice: 40;
+	border-image-slice: 100;
   	border-image-repeat: stretch;
 
+}
+.footer_nav_text{
+padding-right: 20px;
+font-size: 30px;
 }
 .footer_form{
 
