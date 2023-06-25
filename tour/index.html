@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/air-datepicker.css">
 </head>
 <body>
 	<header class="header">
@@ -54,16 +55,44 @@
 					<div class="footer_top"></div>
 					<div class="footer_nav_item">
 						<p class="footer_nav_text">Бронирование номеров</p>
-						<form action="" class="footer_form">
-							<input type="text" name="" placeholder="Заезд" rows="2" cols="2">
-							<input type="text" name="" placeholder="Выезд">
-							<input type="text" name="" placeholder="Гости">
-						</form>
+						<div class="form_checkin">
+							<div class="form_logo">
+								<img src="img/clnd.png" alt="">
+							</div>
+							<div class="form_checkin_title">
+								Заезд
+							</div>
+							<div class="form_checkin_date">
+								<input class="form_checkin_date_item" type="text" id="data" name="">
+							</div>
+						</div>
+						<div class="form_checkin">
+							<div class="form_logo">
+								<img src="img/clnd.png" alt="">
+							</div>
+							<div class="form_checkin_title">
+								Выезд
+							</div>
+							<div class="form_checkin_date">
+								<input class="form_checkin_date_item" type="text" id="data1" name="">
+							</div>
+						</div>
 					</div>
 					<div class="footer_bot"></div>
 			  </div>
 			</div>
 		</section>
 	</header>
+	<script src="js/air-datepicker.js"></script>
+	<script>
+		new AirDatepicker('#data', 
+			{autoClose: true,
+			position: 'top center'
+	});
+		new AirDatepicker('#data1', 
+			{autoClose: true,
+			position: 'top center'
+	});
+	</script>
 </body>
 </html>

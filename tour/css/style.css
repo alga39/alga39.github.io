@@ -53,6 +53,12 @@ a{
 ul{
 	list-style: none;
 }
+input{
+	font-family: 'Montserrat';
+	color: #444444;
+	font-size: 18px;
+	width: 100px;
+}
 .header{
 	background-image: url(../img/bg.jpg);
 	min-height: 100vh;
@@ -178,6 +184,29 @@ ul{
 padding-right: 20px;
 font-size: 30px;
 }
-.footer_form{
-
+.form_checkin{
+	background-color: #fff;
+	display: grid;
+	grid-template-columns: auto auto;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+.form_logo{
+	grid-row-start: span 2;
+	display: flex;
+	align-items: center;
+	margin: 0 10px;
+}
+.form_logo img{
+	height: 17px;
+	width: 17px;
+}
+.form_checkin_title{
+	font-family: 'Montserrat';
+	font-size: 12px;
+	color: #696969;
+}
+.form_checkin_date_item{
+	border: 1px solid transparent;
+	border-radius: 5px;
 }
