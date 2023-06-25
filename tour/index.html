@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Лесное</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/air-datepicker.css">
 </head>
@@ -11,11 +11,11 @@
 	<header class="header">
 		<div class="container">
 			<div class="header_inner">
-				<div></div>
+				<div><a href=""><img src="img/logo.png" alt=""></a></div>
 				<nav>
 					<ul class="menu_list">
 						<li class="menu_list_item"><a href="#" class="menu_list_link">Об отеле</a></li>
-						<li class="menu_list_item"><a href="#" class="menu_list_link">Номера и цены</a></li>
+						<li class="menu_list_item"><a href="info.html" class="menu_list_link">Номера и цены</a></li>
 						<li class="menu_list_item"><a href="#" class="menu_list_link">Мероприятия</a></li>
 						<li class="menu_list_item"><a href="#" class="menu_list_link">Контакты</a></li>
 						<li class="menu_list_item menu_mum"><a href="#" class="menu_list_link">+7(495) 005-61-59</a></li>
@@ -84,7 +84,7 @@
 							<div class="form_checkin_title">
 								Гости
 							</div>
-							<div class="form_checkin_date">
+							<div class="form_checkin_date guest">
 								<select name="" id="">
 									<option value="">1</option>
 									<option value="">2</option>
@@ -93,12 +93,21 @@
 								</select>
 							</div>
 						</div>
+						<button class="footer_btn">
+							Найти номер
+						</button>
 					</div>
 					<div class="footer_bot"></div>
 			  </div>
 			</div>
 		</section>
 	</header>
+	<main class="main_info">
+		<div class="container">
+			<div class="info_box"><h1 class="info_title">Номерной фонд</h1></div>
+			
+		</div>
+	</main>
 	<script src="js/air-datepicker.js"></script>
 	<script>
 		new AirDatepicker('#data', 
