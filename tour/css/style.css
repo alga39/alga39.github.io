@@ -305,3 +305,9 @@ font-size: 30px;
 	align-items: center;
 	background-color: #f5d101;
 }
+.item_img{
+	position: relative;
+	z-index: 1;
+	top: -74px;
+	left: -30px;
+}
