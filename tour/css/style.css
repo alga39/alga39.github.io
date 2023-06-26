@@ -220,18 +220,88 @@ font-size: 30px;
 	background-color: #fbd407;
 	border: none;
 	font-size: 18px;
-	padding: 10px;
+	padding: 10px 20px;
 	border-radius: 3px;
 	box-shadow: 1px 1px 5px #9d9491;
+	cursor: pointer;
+}
+.info{
+	padding-top: 40px;
 }
 .info_title{
-	margin: 0 auto;
-	border-bottom: 30px solid transparent;
-	border-image: url(../img/info_title.png);
-	border-image-slice: 25;
-  	border-image-repeat: stretch;
-
+	text-align: center;
+	font-weight: 400;
 }
-.info_box{
+.info_title_decor{
 	display: flex;
+}
+.info_title_decor_img{
+	margin: 0 auto;
+}
+.room{
+	padding: 40px;
+}
+.room_list{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+.room_list img{
+	width: 100%;
+}
+.room_desc{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);	
+	position: relative;
+	top: -50px;
+}
+.room_desc_item{
+	width: 270px;
+	height: 177px;
+	background-color: #eaedec;
+	margin: 0 auto;
+}
+.room_name{
+	/*display: flex;	*/
+}
+.item{
+	margin: auto;
+	padding: 10px;
+}
+.room_text{
+	font-family: 'Montserrat';
+	font-size: 12px;
+	padding: 10px;
+}
+.room_name{
+	display: flex;
+}
+.room_price{
+	display: flex;
+	font-family: 'Montserrat';
+}
+.room_price_list{
+	border-top: 1px solid #dcdfde;
+}
+.room_price_list_item{
+	border-left:  3px solid #697e53;
+	padding-left: 10px;
+	width: 164px;
+}
+.room_price1{
+	font-size: 12px;
+}
+.room_price2{
+	font-size: 20px;
+	font-weight: 700;
+}
+.room_price3{
+	font-size: 12px;
+	padding-left: 30px;
+}
+.room_text_btn{
+	font-size: 12px;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	background-color: #f5d101;
 }
