@@ -256,7 +256,7 @@ font-size: 30px;
 }
 .room_desc_item{
 	width: 270px;
-	height: 177px;
+	height: 200px;
 	background-color: #eaedec;
 	margin: 0 auto;
 }
@@ -285,6 +285,7 @@ font-size: 30px;
 .room_price_list_item{
 	border-left:  3px solid #697e53;
 	padding-left: 10px;
+	padding-bottom: 10px;
 	width: 164px;
 }
 .room_price1{
@@ -311,3 +312,54 @@ font-size: 30px;
 	top: -74px;
 	left: -30px;
 }
+.slider{
+	padding: 20px;
+}
+.slider_p{
+	font-family: 'Montserrat';
+}
+.slider_price1{
+	font-size: 22px;
+}
+.slider_price2{
+	font-size: 40px;
+	font-weight: 600;	
+}
+.slider_list{
+	padding: 20px 0 50px 0;
+	list-style: square;
+	margin-left: 10px;
+	 
+}
+.room_slider_cont{
+	display: flex;
+	padding: 0 100px;
+}
+.room_slider_text{
+	padding: 20px;
+	border-top: thick double #697e53;
+	border-right: thick double #697e53;
+	border-bottom: thick double #697e53;
+}
+.room_slider_img img{
+	width: 100%;
+}
+.slider_footer{
+	text-align: center;
+}
+.feedback_slider_btn {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #70c849;
+  border: none;
+}
+.feedback_prev_btn {
+	z-index: 3;
+  left: 15px;
+}
+.feedback_next_btn {
+  right: 15px;
+}
+
