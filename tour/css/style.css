@@ -364,7 +364,7 @@ font-size: 30px;
   right: 15px;
 }
 .wellcome{
-	padding-top: 20px;
+	padding-top: 30px;
 }
 .wellcome_list{
 	display: grid;
@@ -448,5 +448,25 @@ font-size: 30px;
   margin-left: 20px;
 }
 .about{
-	padding-top: 20px;
+	padding-top: 30px;
+}
+.event{
+	padding-top: 30px;
+}
+.event_list{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 10px;
+}
+.event_list_img{
+	width: 100%;
+}
+.event_title_main{
+	font-size: 56px;
+}
+.event_list_item{
+	background-color: #fbfbfb;
+}
+.event_list_item:hover{
+	background-color: #c4c4c4;
 }
