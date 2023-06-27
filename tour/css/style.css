@@ -352,7 +352,7 @@ font-size: 30px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-color: #70c849;
+  background-color: transparent;
   border: none;
 }
 .feedback_prev_btn {
@@ -361,5 +361,37 @@ font-size: 30px;
 }
 .feedback_next_btn {
   right: 15px;
+}
+.wellcome{
+	padding-top: 20px;
+}
+.wellcome_list{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+.wellcome_text{
+	position: relative;
+	left: -70px;
+	z-index: 2;
+	width: 400px;
+}
+.wellcome_text p{
+	width: 100%;
+	font-family: 'Montserrat';
+	font-size: 14px;
+}
+.wellcome_text img{
+	display: flex;
+	margin: 0 auto;
+}
+.wellcome_text_inner{
+	border: thick double #697e53;
+	background-color: #fff;
+	padding: 20px;
+}
+.wellcome_animal{
+	z-index: 4;
+	position: relative;
+	left: -120px;
 }
 
