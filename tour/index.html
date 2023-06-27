@@ -275,9 +275,35 @@
 				</div>
 			</div>
 		</section>
+		<section class="about">
+			<div class="container">
+				<h1 class="info_title">Видео об отеле</h1>
+				<div class="info_title_decor">
+					<div class="info_title_decor_img">
+						<img src="img/info_title.png" alt="">
+					</div>
+					</div>
+				<div class="video-container">
+          <div class="main-video">
+            <video id="mainVideo" autoplay>
+              <source src="video/mainVideo.mp4" type="video/mp4">
+            </video>
+           </div>
+        
+          <div class="thumbnail-container">
+          	<img src="img/venz0.png" alt="">
+            <div class="arrow arrow-left" onclick="changeVideo(-1)"><img src="img/arrow-l.png" alt="Next"></div>
+            <div class="video_desc"><div class="thumbnail" onclick="selectVideo(0)" id="mainVideo"></div>Новый год 2019</div>
+            <div class="video_desc"><div class="thumbnail" onclick="selectVideo(1)" id="mainVideo"></div>Лето в "Лесном"</div>
+            <div class="video_desc"><div class="thumbnail" onclick="selectVideo(2)" id="mainVideo"></div>Осень-пора свадьб</div>
+            <div class="arrow arrow-right" onclick="changeVideo(1)"><img src="img/arrow-r.png" alt="Next"></div>
+            <img src="img/venz.png" alt="">
+          </div>
+          <img src="img/info_title.png" alt="">
+        </div>
+      </div>
+		</section>		
 	</main>
-	<!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
@@ -297,6 +323,57 @@
  prevArrow: '<button type="button" class="feedback_slider_btn feedback_prev_btn"><img src="img/arrow-l.png" alt="Previous"></button>',
             nextArrow: '<button type="button" class="feedback_slider_btn feedback_next_btn"><img src="img/arrow-r.png" alt="Next"></button>'
 });
+		var videos = ['../video/video1.mp4', '../video/video2.mp4', '../video/video3.mp4'];
+          var currentVideoIndex = 0;
+          var smallVideos = [];
+          var thumbnailElements = document.getElementsByClassName('thumbnail');
+  
+          function changeVideo(direction) {
+          currentVideoIndex += direction;
+    
+          if (currentVideoIndex < 0) {
+          currentVideoIndex = videos.length - 1;
+          } else if (currentVideoIndex >= videos.length) {
+            currentVideoIndex = 0;
+          }
+    
+          var mainVideo = document.getElementById('mainVideo');
+          mainVideo.src = videos[currentVideoIndex];
+          mainVideo.load();
+          mainVideo.play();
+          }
+  
+          function selectVideo(videoIndex) {
+          currentVideoIndex = videoIndex;
+    
+          var mainVideo = document.getElementById('mainVideo');
+          mainVideo.src = videos[currentVideoIndex];
+          mainVideo.load();
+          mainVideo.autolay();
+  
+          for (var i = 0; i < thumbnailElements.length; i++) {
+            thumbnailElements[i].classList.remove('selected');
+          }
+    
+    
+          thumbnailElements[videoIndex].classList.add('selected');
+        }
+  
+        function setupSmallVideos() {
+        for (var i = 0; i < thumbnailElements.length; i++) {
+          var videoElement = document.createElement('video');
+          videoElement.src = videos[i];
+          videoElement.loop = true;
+          videoElement.muted = true;
+          videoElement.autoplay = true;
+          videoElement.width = 100; 
+          videoElement.height = 60; 
+          thumbnailElements[i].appendChild(videoElement);
+          smallVideos.push(videoElement);
+        }
+        }
+  
+        setupSmallVideos();
 	</script>
 </body>
 </html>
