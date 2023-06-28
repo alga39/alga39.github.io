@@ -72,12 +72,17 @@ input{
 	padding: 0 10px;
 }
 .header_inner{
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	display: flex;
+	justify-content: space-between;
+}
+.sticky {
+	position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 .menu_list{
 	display: flex;
-	justify-content: space-between;
+	gap: 30px;
 	align-items: center;
 	padding-top: 20px;
 	padding-left: 10px;
@@ -155,7 +160,6 @@ input{
 .footer_nav{
 	display: grid;
 	grid-template-columns: auto 880px;
-	/*grid-template-columns: repeat(3 1fr);*/
 }
 .footer_top{
 	grid-column: 2;
@@ -469,4 +473,64 @@ font-size: 30px;
 }
 .event_list_item:hover{
 	background-color: #c4c4c4;
+	border: 2px solid #c2aa7f;
+}
+.event_list_text{
+	padding: 0 10px;
+}
+.way{
+	padding-top: 30px;
+}
+
+.way_info{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+}
+.way_list{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 30px;
+}
+.way_list_item{
+	align-items: center;
+}
+.way_text{
+	font-family: 'Montserrat';
+}
+.way_info_map_img{
+	width: 100%;
+}
+.way_contact{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	border: thick double #c2aa7f;
+	padding: 20px;
+}
+.way_contact h2{
+	padding-bottom: 40px;
+}
+.contact_title{
+	font-family: 'Bebas Neue';
+}
+.contact_item{
+	font-family: 'Montserrat';
+}
+.contact_list{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.contact_text{
+	display: flex;
+	gap: 10px;
+}
+.contact_soc{
+	font-family: 'Montserrat';
+	padding-top: 65px;
+}
+.contact_soc_list{
+	display: flex;
+	padding-top: 10px;
+	gap: 5px;
 }
