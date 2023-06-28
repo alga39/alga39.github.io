@@ -552,6 +552,53 @@ font-size: 30px;
 	padding-top: 10px;
 	gap: 5px;
 }
+@media(max-width: 840px){
+	.title_desc{
+	font-size: 15px;
+	padding-left: 50px;
+}
+.title_img{
+	margin-top: 5px;
+	margin-bottom: 10px;
+	height: 200px;
+}
+.title_slog{
+	font-size: 35px;
+}
+.footer_nav{
+	grid-template-columns: auto 805px;
+}
+.footer_nav_item{
+	padding: 9px;
+}
+.footer_nav_text{
+	font-size: 20px;
+}
+.room_desc_item{
+	width: 207px;
+	height: 215px;
+}
+.room_text{
+	font-size: 10px;
+	padding: 6px;
+}
+.room_price_list_item{
+	width: 104px;
+}
+.room_slider_cont{
+	display: flex;
+	padding: 0 10px;
+}
+.slider_p{
+	font-size: 13px;
+}
+.slider_list{
+	padding: 10px 0 10px 0;
+}
+.slider_price2{
+	font-size: 30px;
+}
+}
 @media(max-width: 610px){
 	.nav_btn{
 		display: flex;
