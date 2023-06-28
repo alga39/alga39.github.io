@@ -81,6 +81,23 @@ top: 0;
 left: 0;
 right: 0;
 }
+.nav_btn{
+	width: 30px;
+	height: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	display: none;
+}
+.nav_btn span{
+	height: 2px;
+	background-color: #fff;
+	width: 100%;
+}
 .menu_list{
 	display: flex;
 	gap: 30px;
@@ -534,4 +551,33 @@ font-size: 30px;
 	display: flex;
 	padding-top: 10px;
 	gap: 5px;
+}
+@media(max-width: 610px){
+	.nav_btn{
+		display: flex;
+		margin: 10px;
+	}
+	.nav_btn, 
+	.logo{
+		position: relative;
+		z-index: 10;
+	}
+	.menu_list{
+		position: absolute;
+		z-index: 5;
+		background-color: #c2aa7f;
+		flex-direction: column;
+		align-items: center;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 30px;
+		height: 100vh;
+		transform: translateY(-100%);
+		transition: transform .3s ease;
+	}
+	.menu_list.menu_list_active{
+		transform: translateY(0%);
+	}
 }

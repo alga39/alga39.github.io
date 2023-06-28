@@ -11,8 +11,13 @@
 	<header class="header">
 		<div class="container">
 			<div class="header_inner sticky">
-				<div><a href=""><img src="img/logo.png" alt=""></a></div>
+				<div><a class="logo" href=""><img src="img/logo.png" alt=""></a></div>
 				<nav>
+					<button class="nav_btn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
 					<ul class="menu_list">
 						<li class="menu_list_item"><a href="#" class="menu_list_link">Об отеле</a></li>
 						<li class="menu_list_item"><a href="info.html" class="menu_list_link">Номера и цены</a></li>
@@ -480,6 +485,12 @@
         }
   
         setupSmallVideos();
+
+        const menuBtn = document.querySelector('.nav_btn');
+const menu = document.querySelector('.menu_list');
+menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('menu_list_active');
+});
 	</script>
 </body>
 </html>
