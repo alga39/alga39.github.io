@@ -103,9 +103,9 @@ right: 0;
 }
 .menu_list{
 	display: flex;
-	gap: 5px;
+	gap: 30px;
 	align-items: center;
-	padding-top: 20px;
+	padding-top: 5px;
 	padding-left: 10px;
 }
 .menu_list_item{
