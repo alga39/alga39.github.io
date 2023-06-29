@@ -6,6 +6,7 @@
 	<title>Лесное</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/air-datepicker.css">
+	<link rel="stylesheet" href="css/animate.min.css">
 </head>
 <body>
 	<header class="header">
@@ -118,9 +119,12 @@
 					</div>
 			</div>
 		</section>
-		<section class="room">
+		<!-- 
+
+		 -->
+		<section class="room  wow fadeInLeft" data-wow-duration="3s">
 			<div class="container">
-			<div class="room_list">
+			<div class="room_list" >
 				<div class="room_list_item"><img src="img/room1.jpg" alt=""></div>
 				<div class="room_list_item"><img src="img/room1.jpg" alt=""></div>
 				<div class="room_list_item"><img src="img/room1.jpg" alt=""></div>
@@ -195,7 +199,7 @@
 			<!-- </div> -->
 		</div>
 		</section>
-		<section class="slider">
+		<section class="slider wow fadeInLeft" data-wow-duration="3s">
 			<div class="container">
 				<div class="room_slider">
 					<div class="room_slider_cont">
@@ -261,10 +265,10 @@
 		<section class="wellcome">
 			<div class="container">
 				<div class="wellcome_list">
-					<div class="wellcome_img">
+					<div class="wellcome_img wow fadeInLeft" data-wow-duration="3s">
 						<img src="img/welcome.png" alt="">
 					</div>
-					<div class="wellcome_text">
+					<div class="wellcome_text wow fadeInUp" data-wow-duration="3s">
 						<img src="img/venz1.png" alt="">
 						<div class="wellcome_text_inner">
 							<h2>Добро пожаловать в отель-заповедник "Лесное"</h2>
@@ -275,7 +279,7 @@
 						</div>
 						<img src="img/venz2.png" alt="">
 					</div>
-					<div class="wellcome_animal">
+					<div class="wellcome_animal wow fadeInRight" data-wow-duration="3s">
 						<img class="wellcome_animal_img" src="img/animal.png" alt="">
 					</div>
 				</div>
@@ -289,7 +293,7 @@
 						<img src="img/info_title.png" alt="">
 					</div>
 					</div>
-				<div class="video-container">
+				<div class="video-container wow fadeInLeft" data-wow-duration="3s">
           <div class="main-video">
             <video class="main_video" id="mainVideo" autoplay>
               <source src="video/mainVideo.mp4" type="video/mp4">
@@ -309,7 +313,7 @@
         </div>
       </div>
 		</section>
-		<section class="event">
+		<section class="event wow fadeInLeft" data-wow-duration="3s">
 			<div class="container">
 				<h1 class="info_title">Календарь событий</h1>
 				<div class="info_title_decor">
@@ -346,7 +350,7 @@
 				
 			</div>
 		</section>
-		<section class="way">
+		<section class="way wow fadeInLeft" data-wow-duration="3s">
 			<div class="container">
 				<h1 class="info_title">Как добраться до отеля</h1>
 				<div class="info_title_decor">
@@ -421,6 +425,7 @@
 	<link rel="stylesheet" href="css/slick-theme.css">
   <script type="text/javascript" src="js/slick.min.js"></script>
 	<script src="js/air-datepicker.js"></script>
+	<script src="js/wow.js"></script>
 	<script>
 		new AirDatepicker('#data', 
 			{autoClose: true,
@@ -492,6 +497,16 @@ const menu = document.querySelector('.menu_list');
 menuBtn.addEventListener('click', () => {
     menu.classList.toggle('menu_list_active');
 });
+/**/
+wow = new WOW({
+    boxClass: 'wow',
+    animateClass: 'animated',
+    offset: 0,
+    mobile: false,
+    live: true
+})
+wow.init();
+
 	</script>
 </body>
 </html>
