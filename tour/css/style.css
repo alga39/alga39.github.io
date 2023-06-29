@@ -74,6 +74,7 @@ input{
 .header_inner{
 	display: flex;
 	justify-content: space-between;
+	z-index: 10;
 }
 .sticky {
    position: fixed;
@@ -177,7 +178,7 @@ right: 0;
 }
 .footer_nav{
 	display: grid;
-	grid-template-columns: auto 880px;
+	grid-template-columns: auto auto;
 }
 .footer_top{
 	grid-column: 2;
@@ -275,15 +276,18 @@ font-size: 30px;
 	grid-template-columns: repeat(3, 1fr);	
 	position: relative;
 	top: -50px;
+	justify-content: space-between;
 }
 .room_desc_item{
 	width: 270px;
 	height: 200px;
-	background-color: #eaedec;
+	/*background-color: #eaedec;*/
 	margin: 0 auto;
+	/*padding: 0 60px;*/
 }
 .room_name{
 	/*display: flex;	*/
+	background-color: #eaedec;
 }
 .item{
 	margin: auto;
@@ -300,8 +304,10 @@ font-size: 30px;
 .room_price{
 	display: flex;
 	font-family: 'Montserrat';
+	background-color: #eaedec;
 }
 .room_price_list{
+	width: 70%;
 	border-top: 1px solid #dcdfde;
 }
 .room_price_list_item{
@@ -552,6 +558,47 @@ font-size: 30px;
 	padding-top: 10px;
 	gap: 5px;
 }
+@media(max-width: 1000px){
+	.room_desc_item{
+		width: 232px;
+	}
+	.item{
+		width: 60px;
+	}
+	.wellcome_animal{
+		display: none;
+	}
+	.room_slider_text{
+		padding: 10px;
+	}
+	.slider_p{
+	font-size: 13px;
+	}
+.slider_list{
+	padding: 10px 0 10px 0;
+	}
+.slider_price2{
+	font-size: 30px;
+	}
+}
+@media(max-width: 850px){
+	.room_desc_item{
+		width: 194px;
+	}
+	.item_img{
+		top: -70px;
+	}
+	.slider_p{
+	font-size: 11px;
+	}
+.slider_list{
+	padding: 7px 0 8px 0;
+	}
+.slider_price2{
+	font-size: 20px;
+	}
+	
+}
 @media(max-width: 840px){
 	.title_desc{
 	font-size: 15px;
@@ -565,18 +612,11 @@ font-size: 30px;
 .title_slog{
 	font-size: 35px;
 }
-.footer_nav{
-	grid-template-columns: auto 805px;
-}
 .footer_nav_item{
 	padding: 9px;
 }
 .footer_nav_text{
 	font-size: 20px;
-}
-.room_desc_item{
-	width: 207px;
-	height: 215px;
 }
 .room_text{
 	font-size: 10px;
@@ -589,14 +629,89 @@ font-size: 30px;
 	display: flex;
 	padding: 0 10px;
 }
-.slider_p{
-	font-size: 13px;
+.wellcome_animal{
+	display: none;
+}	
+.wellcome_list{
+	padding: 0 5px;
+	display: flex;
+	gap: 10px;
 }
-.slider_list{
-	padding: 10px 0 10px 0;
+.wellcome_text{
+	position: relative;
+    left: 0;
 }
-.slider_price2{
-	font-size: 30px;
+}
+@media(max-width: 710px){
+	.room_desc_item{
+		width: 161px;
+	}
+	.item_img{
+		top: -88px;
+	}
+	.room_price_list_item{
+		width: 87px;
+	}
+	.room_price2{
+		font-size: 17px;
+	}
+	.room_price3{
+		padding-left: 20px;
+	}
+	.room_price{
+	display: block;
+}
+.room_desc_item{
+	width: 130px;
+}
+.room_slider{
+	width: 100%;
+}
+}
+@media(max-width: 700px){
+	.item_img{
+		display: none;
+	}
+	.wellcome_img img{
+	width: 100%;
+}
+.wellcome_text_inner{
+	padding: 10px;
+}
+.room_text{
+	font-size: 10px;
+	padding: 6px;
+}
+.room_price_list_item{
+	width: 87px;
+}
+.room_slider_cont{
+	display: flex;
+	padding: 0 10px;
+}
+.main_video{
+	width: 90%;
+}
+.arrow-left{
+	margin-right: 0;
+}
+.arrow-right{
+	margin-left: 0;
+}
+.venz_slider{
+	display: none;
+}
+.thumbnail-container img{
+	padding: 0 3px;
+}
+input{
+	width: 58px;
+}
+.room_name{
+	display: block;
+}
+.room_slider{
+	display: block;
 }
 }
 @media(max-width: 610px){
@@ -627,4 +742,62 @@ font-size: 30px;
 	.menu_list.menu_list_active{
 		transform: translateY(0%);
 	}
+	.event_title_main{
+		font-size: 20px;
+	}
+	.event_title_main_link{
+		font-size: 12px;
+	}
+	.way_text{
+		font-size: 12px;
+	}
+	.way_info{
+		display: block;
+	}
+}
+@media(max-width: 500px){
+	.title_img{
+	margin-top: 5px;
+	margin-bottom: 10px;
+	height: 100px;
+}
+.title_slog{
+	font-size: 20px;
+	padding: 0 0 0 10px;
+}
+.price2{
+	font-size: 20px;
+}
+.price3{
+	padding: 0 0 0 20px;
+}
+.footer_nav_text{
+	padding-right: 5px;
+	font-size: 15px;
+}
+.footer_btn{
+	background-color: #fbd407;
+	border: none;
+	font-size: 10px;
+	padding: 5px 5px;
+	cursor: pointer;
+}
+.form_checkin_title {
+    font-size: 7px;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+.slider_price1{
+	font-size: 12px;
+}
+.slider_price2{
+	font-size: 17px;
+}
+.room_slider_img img{
+	width: 100%;
+}
+.room_slider_text{
+	padding: 7px;
+	border: thick double #697e53;
+}
 }
