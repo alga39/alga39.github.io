@@ -103,7 +103,7 @@ right: 0;
 }
 .menu_list{
 	display: flex;
-	gap: 30px;
+	gap: 5px;
 	align-items: center;
 	padding-top: 20px;
 	padding-left: 10px;
