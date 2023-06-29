@@ -96,7 +96,7 @@ right: 0;
 }
 .nav_btn span{
 	height: 2px;
-	background-color: #fff;
+	background-color: #d3c1a2;
 	width: 100%;
 }
 .menu_list{
@@ -597,7 +597,9 @@ font-size: 30px;
 .slider_price2{
 	font-size: 20px;
 	}
-	
+	.event_list{
+	grid-template-columns: repeat(4, 1fr);
+}
 }
 @media(max-width: 840px){
 	.title_desc{
@@ -641,8 +643,18 @@ font-size: 30px;
 	position: relative;
     left: 0;
 }
+.event_list{
+	grid-template-columns: repeat(3, 1fr);
+}
 }
 @media(max-width: 710px){
+	.room_slider_text{
+		width: 800px;
+	}
+	.room_slider_img img{
+	height: 100%;
+	width: 100%;
+}
 	.room_desc_item{
 		width: 161px;
 	}
@@ -668,13 +680,11 @@ font-size: 30px;
 	width: 100%;
 }
 }
+
 @media(max-width: 700px){
 	.item_img{
 		display: none;
 	}
-	.wellcome_img img{
-	width: 100%;
-}
 .wellcome_text_inner{
 	padding: 10px;
 }
@@ -693,6 +703,8 @@ font-size: 30px;
 	width: 90%;
 }
 .arrow-left{
+	left: 40px;
+	position: relative;
 	margin-right: 0;
 }
 .arrow-right{
@@ -741,6 +753,12 @@ input{
 	}
 	.menu_list.menu_list_active{
 		transform: translateY(0%);
+	}
+	.wellcome_list{
+		justify-content: center;
+	}
+	.wellcome_img{
+		display: none;
 	}
 	.event_title_main{
 		font-size: 20px;
@@ -793,11 +811,61 @@ input{
 .slider_price2{
 	font-size: 17px;
 }
-.room_slider_img img{
-	width: 100%;
-}
+
 .room_slider_text{
 	padding: 7px;
 	border: thick double #697e53;
+}
+}
+@media(max-width: 376px){
+	.footer_nav_text{
+			font-size: 12px;	
+	}
+	.form_logo{
+		 margin: 0 5px;	
+	}
+	input {
+    width: 48px;
+}
+.room {
+    padding: 10px;
+}
+.room_desc_item {
+    width: 108px;
+}
+.room_text {
+    font-size: 9px;
+    padding: 5px;
+}
+.thumbnail-container img {
+    padding: 0 0px;
+}
+.arrow-left{
+	left: 30px;
+	position: relative;
+	margin-right: 0;
+}
+.arrow-right{
+	margin-left: 0;
+	right: 30px;
+	position: relative;
+}
+.way_contact{
+	padding: 10px;
+}
+.contact_soc{
+	padding-top: 36px;
+}
+.contact_soc_list img{
+	height: 30px;
+}
+.way_contact h2 {
+    padding-bottom: 15px;
+}
+.contact_item{
+	font-size: 12px;
+}
+.contact_text img{
+	display: none;
 }
 }
