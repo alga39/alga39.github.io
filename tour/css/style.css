@@ -817,7 +817,10 @@ input{
 	border: thick double #697e53;
 }
 }
-@media(max-width: 376px){
+@media(max-width: 415px){
+	.header{
+		min-height: 0;
+	}
 	.footer_nav_text{
 			font-size: 12px;	
 	}
