@@ -1,0 +1,132 @@
+ul{
+	margin-bottom: 0;
+	padding-left: 0;
+}
+.category_title{
+	padding-top: 20px;
+}
+
+.contacts{
+	margin-bottom: 20px;
+}
+.contacts_box{
+	display: flex;
+	gap: 10px;	
+}
+.contacts_box_inner{
+	background-color: #F5F5F5;
+	border-radius: 5px;
+	padding: 10px;
+	width: 100%;
+}
+.contacts_list{
+	margin-bottom: 10px;
+}
+.contcts_item_title{
+	font-weight: 700;
+}
+.contacts_btn{
+	font-weight: 700;
+	background-color: #F6F2D0;
+	padding: 5px;
+	display: block;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.accordion-button:focus{
+	background-color: transparent;
+	border: 1px solid transparent;
+	color: transparent;
+}
+/*Accordeon*/
+.accordion {
+    background-color: transparent;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+    font-weight: 700;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-bottom: 20px;
+}
+.accordion:after {
+    content: '\276F';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    transform: rotate(90deg);
+    transition: transform .5s ease-out;
+}
+
+.active:after {
+    content: "\276F";
+    transform: rotate(-90deg);
+    transition: transform .5s ease-out;
+}
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-bottom: 10px;
+}
+.panel_box{
+	display: flex;
+	border-bottom: 1px solid #ccc;
+	padding: 10px;
+}
+.panel_box_list{
+	width: 100%;
+	padding: 5px;
+}
+.panel_box_text{
+	width: 30%;
+	padding: 5px;
+}
+.panel_box_title{
+	font-weight: 700;
+}
+/*END Accordeon*/
+@media (max-width: 1000px){
+	
+}
+@media (max-width: 770px){
+	
+}
+@media (max-width: 700px){
+	
+}
+
+@media(max-width: 570px) {
+	.contacts_box{
+	display: block;	
+}
+.contacts_box_inner{
+	margin-bottom: 10px;
+}
+}
+@media (max-width: 510px){
+	
+}
+@media (max-width: 450px) {
+	.contacts_box{
+		font-size: 14px;
+	}
+	.panel_box{
+		padding: 0;
+	}
+	.panel_box_list{
+		font-size: 14px;
+	}
+	.panel_box_text{
+		font-size: 14px;
+		width: 70%;
+	}
+}
