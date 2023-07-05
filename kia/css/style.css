@@ -34,6 +34,7 @@ p,h1,h2,h3{
 .main_list{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+	padding: 0 15px;
 }
 .main_list_item{
 	border-right: 1px solid #000;
