@@ -1,0 +1,72 @@
+html{
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+	box-sizing: inherit;
+}
+body{
+	font-family: 'Roboto';
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+ul{
+	list-style: none;
+}
+.container{
+	max-width: 1180px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 0 auto;
+}
+.header_inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.menu_link{
+	border: 2px solid #000;
+	border-radius: 5px;
+	padding: 7px;
+	font-weight: 800;
+}
+.main_text{
+	text-align: center;
+	font-size: 24px;
+}
+.main_img{
+	width: 100%;
+}
+.obl{
+	background-color: #008080;
+	margin-top: 10px;
+	padding: 1px 0;
+}
+.info_list{
+	display: flex;
+	gap: 40px;
+}
+.info_list_item{
+	text-align: center;
+}
+.consult{
+	background-color: #FFD700;
+	padding: 8px 0;
+}
+.edu_text{
+	font-size: 18px;
+}
+.interes_list{
+	display: flex;
+	gap: 20px;
+}
+.interes_items{
+	width: 33%;
+	text-align: center;
+}
+.interes_img{
+	width: 100%;
+}
