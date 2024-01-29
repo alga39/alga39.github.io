@@ -53,6 +53,9 @@ a{
 .contacts_item{
 	text-align: right;
 }
+.contacts_link:hover{
+	color: inherit;
+}
 .header_btn{
 	color: #fff;
 	width: 165px;
@@ -70,7 +73,7 @@ a{
 	width: 320px;
 }
 .team_title{
-/*	max-width: 650px;*/
+
 	padding-top: 150px;
 	margin: 0;
 	letter-spacing: 0.8px;
@@ -89,4 +92,70 @@ a{
 }
 .team_line{
 	border-top: 7px solid #000;
+}
+.about{
+	padding-top: 30px;
+}
+.about_title{
+	margin: 0;
+	letter-spacing: 0.8px;
+	font-family: 'Arial',Arial,sans-serif;
+	font-weight: 600;
+	font-size: 52px;
+	color: #58C233;
+	line-height: 50px;
+}
+.about_img{
+	position: relative;
+	bottom: 20px;
+}
+.about_img1{
+	width: 90px;
+	height: 42px;
+	margin-right: 70px;
+}
+.about_img2{
+	width: 130px;
+}
+.about_list{
+	font-size: 21px;
+	line-height: 28px;
+	list-style: none;
+	padding: 0;
+}
+.about_link{
+	color: #58C233;
+}
+.about_link:hover{
+	color: #58C233;
+}
+.service{
+	padding-bottom: 50px;
+}
+.service_inner{
+	display: flex;
+}
+.service_btn{
+	width: 275px;
+	margin: 0 auto;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	font-family: 'Arial',Arial,sans-serif;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 600;
+	background-color: #58C233;
+	padding: 15px 25px;
+	transition: background-color .4s ease;
+	margin-bottom: 20px;
+}
+.service_btn:hover{
+	background-color: #000;
+}
+.service_text{
+	/*font-family: 'Lato', sans-serif;*/
+	font-size: 21px;
+	text-align: center;
+	margin: 0;
 }
