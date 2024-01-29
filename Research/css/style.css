@@ -1,0 +1,92 @@
+body{
+	color: #263238;
+	/*font-family: 'Lato', sans-serif;*/
+	/*font-family: 'Roboto', sans-serif;*/
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+.header{
+	font-family: 'Roboto', sans-serif;
+	padding: 20px 0;
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.30);"
+}
+.header_inner{
+	margin: auto 0;
+}
+.menu_list{
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 47px;
+	margin: 0;
+	padding: 0;
+}
+.menu_link:hover{
+	color: #58C233;
+}
+.header_img{
+	width: 150px;
+	justify-content: center;
+	display: flex;
+}
+
+.header_inner_img{
+	display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.header_contacts{
+	display: flex;
+	justify-content: flex-end;
+}
+.contacts_list{
+	display: inline-block;
+	list-style: none;
+	font-size: 18px;
+	line-height: 21px;
+	margin: auto 0;
+}
+.contacts_item{
+	text-align: right;
+}
+.header_btn{
+	color: #fff;
+	width: 165px;
+	padding: 10px 0;
+	border: none;
+	border-radius: 5px;
+	background-color: #44c419;
+	font-size: 15px;
+	font-weight: 600;
+}
+.team{
+
+}
+.team_img{
+	width: 320px;
+}
+.team_title{
+/*	max-width: 650px;*/
+	padding-top: 150px;
+	margin: 0;
+	letter-spacing: 0.8px;
+	font-family: 'Arial',Arial,sans-serif;
+	font-weight: 600;
+	font-size: 52px;
+	color: #58C233;
+	line-height: 50px;
+}
+.team_text{
+	/*max-width: 600px;*/
+	padding-top: 20px;
+	margin: 0;
+	font-size: 21px;
+	line-height: 28px;
+}
+.team_line{
+	border-top: 7px solid #000;
+}
