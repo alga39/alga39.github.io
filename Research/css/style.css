@@ -238,6 +238,7 @@ margin: 0 auto;
 	text-align: center;	
 	font-size: 20px;	
 	font-weight: 700;	
+	line-height: 20px;
 }
 .appeal_text{
 	padding: 0 20px;
@@ -269,4 +270,67 @@ margin: 0 auto;
 	line-height: 28px;
 	padding: 20px 0;
 	margin: 0;
+}
+.consultation_wrap{
+	padding: 60px 0;
+	display: flex;
+}
+.consultation_btn{
+	color: #fff;
+	font-size: 17px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 20px 0;
+	margin: 0 auto;
+	width: 340px;
+	background-color: #58C233;
+	border-radius: 5px;
+	border: none;
+}
+.system_img{
+	width: 270px;
+	transition: width .7s ease;
+}
+.system_img:hover{
+	width: 300px;
+}
+.interaction{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.interaction_row{
+	margin-bottom: 40px;
+}
+.interaction_inner{
+	display: flex;
+	gap: 30px;
+	align-items: center;
+}
+.interaction_num{
+	border-radius: 100%;
+	border: 3px solid #58C233;
+	min-width: 51px;
+	min-height: 51px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+/*	position: relative;*/
+}
+.interaction_num_text{
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	font-weight: 700;
+	color: #58C233;
+}
+.interaction_title{
+	font-size: 27px;
+	font-weight: 700;
+	margin: 0;
+	}
+.interaction_text{
+	font-size: 19px;
+	margin: 0;
+	padding: 0;
+	line-height: 23px;
 }
