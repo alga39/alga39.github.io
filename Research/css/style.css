@@ -49,6 +49,7 @@ a{
 	font-size: 18px;
 	line-height: 21px;
 	margin: auto 0;
+	padding: 0 0 0 15px;
 }
 .contacts_item{
 	text-align: right;
@@ -466,4 +467,75 @@ padding: 18px 20px;
 }
 .public_link:hover{
 	color: #000;
+}
+.footer_contacts{
+	padding-top: 20px;	
+}
+.footer_contacts_list{
+	text-align: center;
+	margin: 0;		
+	font-size: 20px;	
+}
+.footer_contacts_link{
+	color: #58C233;
+}
+.footer_contacts_link:hover{
+	color: #58C233;
+}
+.row_logo{
+	display: block;
+	margin-top: auto;
+	margin-bottom: auto;
+	text-align: right;
+}
+.footer_logo{
+	width: 200px;
+}
+.footer_logo_bottom{
+	margin-top: auto;
+margin-bottom: auto;
+padding: 0;
+}
+.footer_logo_soc{
+margin-top: auto;
+margin-bottom: auto;
+padding: 0;
+text-align: right;
+}
+.footer_contacts_addr{
+	text-align: center;
+	font-size: 14px;
+}
+.footer_form_inner{
+	text-align: center;
+	background-color: #263238;
+	padding: 20px 10px 0 10px;
+}
+.footer_form_title{
+	color: #ffffff;
+	font-family: 'Arial',Arial,sans-serif;
+	font-size: 16px;
+}
+.footer_form_input{
+	width: 330px;
+	padding: 0 20px;
+	font-size: 20px;
+	margin-right: 20px;
+	border-radius: 5px;
+	border: none;
+}
+.footer_form_btn{
+	background-color: #58C233;
+	border-radius: 5px;
+	border: none;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 600;
+	padding: 2px 20px;
+}
+.footer_policy_text{
+	padding: 0 10px;
+	margin: 0;	
+	color: #fff;
+	font-size: 10px;
 }
