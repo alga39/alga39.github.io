@@ -405,6 +405,10 @@ margin: 0 auto;
 	padding-bottom: 60px;
 	background-color: #ebebeb;
 }
+.cases_inner{
+	background-color: #fff;
+	width: 333px;
+}
 .cases_img{
 	width: 333px;
 }
@@ -413,11 +417,12 @@ margin: 0 auto;
 	font-weight: 700;	
 	line-height: 20px;
 	margin: 0;
-	padding: 10px 0;
+	padding: 10px 0 10px 20px;
 }
 .cases_text{
-	height: 180px;
+	height: 250px;
 	margin: 0;
+	padding: 10px 0 10px 20px;
 }
 .cases_btn{
 	border: none;
@@ -425,6 +430,8 @@ margin: 0 auto;
 	background-color: #000;
 	color: #fff;
 	padding: 8px 20px;
+	margin-left: 20px;
+	margin-bottom: 30px;
 }
 .public{
 	padding-top: 60px;
