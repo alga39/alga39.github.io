@@ -73,7 +73,6 @@ a{
 	width: 320px;
 }
 .team_title{
-
 	padding-top: 150px;
 	margin: 0;
 	letter-spacing: 0.8px;
@@ -84,7 +83,6 @@ a{
 	line-height: 50px;
 }
 .team_text{
-	/*max-width: 600px;*/
 	padding-top: 20px;
 	margin: 0;
 	font-size: 21px;
@@ -327,10 +325,138 @@ margin: 0 auto;
 	font-size: 27px;
 	font-weight: 700;
 	margin: 0;
+	padding-bottom: 20px;	
 	}
 .interaction_text{
 	font-size: 19px;
 	margin: 0;
 	padding: 0;
 	line-height: 23px;
+}
+.form{
+	border: solid 10px #58C233;
+	border-radius: 5px;
+	box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.3);
+	padding: 50px 30px;
+	text-align: center;
+}
+.connection_title{
+	width: 470px;
+	text-align: center;
+	font-size: 27px;
+	font-weight: 700;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+.form_input{
+	font-size: 20px;
+	display: block;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #B3B3B3;
+	padding: 40px 0 20px;
+}
+.form_input::placeholder{
+	font-size: 20px;
+}
+.connection_btn{
+	color: #fff;
+	font-size: 17px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 20px 0;
+	width: 200px;
+	background-color: #58C233;
+	border-radius: 5px;
+	border: none;
+	margin: 40px 0 40px;
+}
+.policy_link{
+	color: #58C233;
+}
+.policy_link:hover{
+	color: #58C233;
+}
+.work{
+	background-color: #fdcc43;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	margin-top: 60px;
+}
+.work_title{
+	color: #fff;
+	letter-spacing: 0.8px;
+	font-family: 'Arial',Arial,sans-serif;
+	font-weight: 600;
+	font-size: 52px;
+	text-align: center;
+	line-height: 50px;
+	margin-bottom: 60px;
+}
+.work_inner{
+	display: block;
+	text-align: center;
+}
+.work_img{
+	width: 100px;
+}
+.cases{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #ebebeb;
+}
+.cases_img{
+	width: 333px;
+}
+.cases_title{
+	font-size: 20px;	
+	font-weight: 700;	
+	line-height: 20px;
+	margin: 0;
+	padding: 10px 0;
+}
+.cases_text{
+	height: 180px;
+	margin: 0;
+}
+.cases_btn{
+	border: none;
+	border-radius: 5px;
+	background-color: #000;
+	color: #fff;
+	padding: 8px 20px;
+}
+.public{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #ebebeb;
+}
+.public_inner{
+	width: 240px;	
+	height: 420px;	
+	border-radius: 5px;
+	border-top-right-radius:5px;
+	background-color: #fff;
+	margin: 0 auto;
+}
+.public_inner span{
+	padding: 0 20px;
+	color: #ff8562;
+}
+.public_img{
+	width: 240px;
+	border-radius: 5px;
+}
+.public_title{
+	font-size: 20px;	
+	font-weight: 700;	
+	line-height: 20px;
+	margin: 0;
+	padding: 0 20px;
+}
+.public_text{
+padding: 18px 20px;
+}
+.public_link:hover{
+	color: #000;
 }
