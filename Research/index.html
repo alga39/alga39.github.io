@@ -13,29 +13,45 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+	<div class="menu-close menu-open">
+		
+	</div>
 	<header class="header">
 		<div class="container">
 			<div class="row">
-				<div class="col-xl-4 header_inner">
+				<div class="col-xl-4 col-lg-5 col-md-5 header_inner">
+					<button class="menu_btn">
+						<img src="img/burger.svg" alt="">
+					</button>
 					<ul class="menu_list">
+						<li class="menu_close">
+							<button class="menu_close_btn">
+								<img src="img/close_btn.svg" alt="">
+							</button>
+						</li>
 						<li class="menu_item"><a href="" class="menu_link">Услуги</a></li>
 						<li class="menu_item"><a href="" class="menu_link">Кейсы</a></li>
 						<li class="menu_item"><a href="" class="menu_link">Цены</a></li>
 						<li class="menu_item"><a href="" class="menu_link">Мы в СМИ</a></li>
+						<li class="mobile_nav">
+							<ul class="mobile_menu">
+								<li class="mobile_menu_item"><a href="" class="mobile_menu_link">Команда</a></li>
+							</ul>
+						</li>
 						<li class="menu_item"><a href="" class="menu_link">Отзывы</a></li>
 					</ul>
 				</div>
-				<div class="col-xl-4">
+				<div class="col-xl-4 col-lg-3 col-md-3 col-sm-4 offset-xs-4 col-xs-6 ">
 					<div class="header_inner_img"><img class="header_img" src="img/logo.png" alt=""></div>
 				</div>
-				<div class="col-xl-2 header_contacts">
+				<div class="col-xl-2 col-lg-2 col-md-2 header_contacts">
 					<ul class="contacts_list">
 						<li class="contacts_item"><a class="contacts_link" href="tel:+7-495-476-40-43">+7-495-476-40-43</a></li>
 						<li class="contacts_item"><a class="contacts_link" href="mailto:hi@serm-orm.ru">hi@serm-orm.ru</a></li>
 					</ul>
 				</div>
-				<div class="col-xl-2 header_inner">
-					<button class="header_btn">закать аудит</button>
+				<div class="col-xl-2 col-lg-2 col-md-2 header_inner">
+					<button class="header_btn">заказать аудит</button>
 				</div>
 			</div>
 		</div>
@@ -830,5 +846,6 @@
 		
 
 	</script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
