@@ -33,7 +33,7 @@ ul{
   padding-inline-start: 0;
 }
 section{
-	background-color: #000;
+	background-color: #1C1E27;
 	max-width: 600px;
 	margin: 0 auto;
 }
@@ -119,5 +119,5 @@ section{
 }
 .box_btn_set{
 	width: 154px;
-	margin-top: 70px;
+	margin-top: 20px;
 }
