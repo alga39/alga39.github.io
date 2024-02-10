@@ -44,7 +44,7 @@ section{
 	padding-right: 28px;
 }
 .top_img{
-	width: 600px;
+width: 100%;
 }
 .title{
 	padding-top: 11px;
@@ -105,11 +105,12 @@ section{
 	background-color: #232C3B;
 	box-shadow: 0px 0px 10px #3498FE;
 	display: flex;
+	justify-content: space-between;
 	margin-bottom: 35px;
 }
 .box_info{
 	text-align: left;
-	padding-left: 60px;
+	padding-right: 10px;
 	padding-top: 20px;
 }
 .box_text{
@@ -131,6 +132,7 @@ section{
 	justify-content: space-between;
 	text-align: center;
 }
+
 .icons_btn{
 	text-transform: uppercase;
 	width: 154px;
@@ -176,12 +178,108 @@ section{
 	color: #ABB2BA;
 }
 .footer_list{
-	padding-top: 160px;
+	padding-top: 165px;
 	display: flex;
 	justify-content: center;
 	gap: 25px;
 }
+.item_text{
+	text-align: center;
+}
 .footer_text{
 	padding-top: 26px;
 	text-align: center;
+}
+@media(max-width: 515px){
+	.box_text{
+		font-size: 14px;
+	}
+}
+@media(max-width: 500px){
+	.group{
+		margin-top: 60px;
+	}
+	.box_set{
+		padding: 70px 23px 30px 23px;
+	}
+	.icons_img{
+		width: 100px;
+	}
+	.icons_btn{
+		width: 120px;
+		font-size: 12px;
+	}
+	.app_text{
+		font-size: 12px;
+		line-height: 20px;
+	}
+	.footer{
+		font-size: 15px;
+	}
+}
+@media(max-width: 465px){
+	.box_text{
+		padding-top: 10px;
+		font-size: 12px;
+	}
+	.app_set{
+		padding-left: 5px;
+	}
+	.app_list{
+		align-items: center;
+	}
+	.mobile_img{
+		display: none;
+	}
+	.footer{
+		font-size: 12px;
+	}
+	.footer_list{
+		padding-top: 120px;
+	}
+}
+@media(max-width: 410px){
+	.box_set{
+		padding: 40px 15px 30px 15px;
+	}
+	.hello_text{
+		font-size: 15px;
+	}
+	.box_btn{
+		font-size: 12px;
+		padding: 6px 0;
+	}
+	.box_btn_set,
+	.hello_btn{
+		width: 125px;
+	}
+	.hello_btn, {
+		width: 130px;
+	}
+	.icons_btn{
+		width: 105px;
+		font-size: 10px;
+		padding: 4px 0;
+	}
+}
+@media(max-width: 370px){
+	.box_img_width{
+		width: 120px;
+	}
+	.box_info{
+		padding-top: 10px;
+	}
+	.box_btn_set{
+		width: 110px;
+		margin-top: 10px;
+	}
+}
+@media(max-width: 360px){
+	.icons_img{
+		width: 90px;
+	}
+	.icons_btn{
+		width: 90px;
+		font-size: 9px;
+	}
 }
