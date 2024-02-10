@@ -61,6 +61,8 @@ section{
 	border-radius: 8px;
 	background-color: #232C3B;
 	box-shadow: 0px 0px 10px #3498FE;
+}
+.box_set{
 	padding: 70px 23px 53px 23px;
 	text-align: center;
 }
@@ -120,4 +122,66 @@ section{
 .box_btn_set{
 	width: 154px;
 	margin-top: 20px;
+}
+.icons{
+	margin-top: 70px;
+}
+.icons_list{
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+.icons_btn{
+	text-transform: uppercase;
+	width: 154px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 17px;
+	border: 1px solid #3498FE;
+	border-radius: 8px;
+	box-shadow: 0px 0px 10px #3498FE;
+	padding: 7px 7px;
+}
+.app{
+	margin-top: 70px;
+	padding-bottom: 70px;
+}
+.app_list{
+	display: flex;
+	justify-content: space-between;
+}
+.app_set{
+	padding: 16px 15px;
+	margin-bottom: 17px;
+}
+.app_text{
+	font-size: 13px;
+	color: #B4CCE4;
+	line-height: 25px;
+}
+.app_text span{
+	color: #3498FE;
+}
+.app_img{
+	width: 100%;
+}
+.footer{
+	background-image: url(../img/footer.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 90vh;
+	font-size: 17px;
+	color: #ABB2BA;
+}
+.footer_list{
+	padding-top: 160px;
+	display: flex;
+	justify-content: center;
+	gap: 25px;
+}
+.footer_text{
+	padding-top: 26px;
+	text-align: center;
 }
