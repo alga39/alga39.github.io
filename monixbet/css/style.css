@@ -173,12 +173,12 @@ width: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-	height: 90vh;
+	height: 80vh;
 	font-size: 17px;
 	color: #ABB2BA;
 }
 .footer_list{
-	padding-top: 165px;
+	padding-top: 230px;
 	display: flex;
 	justify-content: center;
 	gap: 25px;
@@ -218,6 +218,9 @@ width: 100%;
 	}
 }
 @media(max-width: 465px){
+	.app{
+		padding-bottom: 35px;
+	}
 	.box_text{
 		padding-top: 10px;
 		font-size: 12px;
@@ -233,9 +236,15 @@ width: 100%;
 	}
 	.footer{
 		font-size: 12px;
+		height: 52vh;
 	}
 	.footer_list{
-		padding-top: 120px;
+		padding-top: 160px;
+	}
+}
+@media(max-width: 420px){
+	.footer{
+		height: 40vh;
 	}
 }
 @media(max-width: 410px){
