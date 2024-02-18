@@ -72,12 +72,17 @@ ul{
 	line-height: 20px;
 	text-transform: uppercase;
 }	
+.header_line{
+	width: 65%;
+	border-top: 1px solid #fff;
+	opacity: .4;
+}
 .header_contacts{
 	font-size: 16px;
 	line-height: 20px;
 	align-items: center;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
 	gap: 42px;
 	padding-top: 19px;
 }
@@ -172,20 +177,27 @@ ul{
 	justify-content: space-between;
 	color: #fff;
 	padding-top: 45px;
+	padding-bottom: 40px;
 }
 .footer_logo{
 	display: flex;
 	gap: 17px;
 }
+.logo_text{
+	padding-top: 10px;
+}
+.logo_text_set{
+	line-height: 16px;
+}
 .logo_text span{
 	font-size: 12.8px;
 	font-weight: 700;
-	line-height: 16px;
 }
 .footer_item{
 	font-size: 12.8px;
 	line-height: 16px;
 	font-weight: 400;
+	padding-bottom: 8px;
 }
 .footer_item span{
 	font-weight: 700;
@@ -216,7 +228,6 @@ ul{
 .mail_btn{
 	position: relative;
 	right: 32px;
-	/*bottom: 1px;*/
 	width: 126px;
 	background-color: #3A5669;
 	padding: 10px 0 10px;
@@ -226,4 +237,19 @@ ul{
 	font-weight: 400;
 	text-transform: uppercase;
 	border: 1.5px solid #D9D9D9;
+}
+.footer_line{
+	border-top: 1px solid #fff;
+	opacity: .4;
+	padding-bottom: 25px;
+}
+.footer_policy_list{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 28px;
+	font-size: 12px;
+	line-height: 15px;
+	color: #fff;
+	opacity: 70%;
+	letter-spacing: 2px;
 }
