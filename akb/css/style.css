@@ -60,7 +60,7 @@ ul{
 	align-items: center;
 	gap: 30px;
 }
-.header_text{
+.logo_text{
 	width: 220px;
 	font-size: 12px;
 	line-height: 15px;
@@ -106,4 +106,124 @@ ul{
 	margin-top: 70px;
 	border-radius: 50px;
 	line-height: 20px;
+}
+.manufacture{
+	padding-top: 74px;
+	padding-bottom: 136px;
+}
+.manufacture_title{
+	color: #243038;
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 39px;
+	padding-bottom: 34px;
+}
+.manufacture_set{
+	padding: 0 24px;
+}
+.manufacture_list{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px 20px;
+}
+.manufacture_item{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	width: 364px;
+	height: 264px;	
+	border-radius: 16px;
+	padding-left: 34px;	
+	position: relative;
+}
+.bg1{
+	background-image: url(../img/item1.png);
+}
+.bg2{
+	background-image: url(../img/item2.png);
+}
+.bg3{
+	background-image: url(../img/item3.png);
+}
+.bg4{
+	background-image: url(../img/item4.png);
+}
+.bg5{
+	background-image: url(../img/item5.png);
+}
+.bg6{
+	background-image: url(../img/item6.png);
+}
+.manufacture_item_title{
+	color: #fff;
+	font-size: 20px;
+	font-weight: 800;
+	line-height: 24px;
+	text-transform: uppercase;
+	padding-bottom: 25px;
+	position: absolute;
+	bottom: 0;
+}
+.footer{
+	background-color: #0F1519;
+}
+.footer_inner{
+	display: flex;
+	justify-content: space-between;
+	color: #fff;
+	padding-top: 45px;
+}
+.footer_logo{
+	display: flex;
+	gap: 17px;
+}
+.logo_text span{
+	font-size: 12.8px;
+	font-weight: 700;
+	line-height: 16px;
+}
+.footer_item{
+	font-size: 12.8px;
+	line-height: 16px;
+	font-weight: 400;
+}
+.footer_item span{
+	font-weight: 700;
+	line-height: 1px;
+}
+.footer_link{
+	font-size: 12.8px;
+	font-weight: 700;
+	line-height: 16px;
+}
+.footer_menu_item{
+	padding-bottom: 16px;
+}
+.footer_menu_link{
+	font-size: 16px;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+.input_mail{
+	width: 225px;
+	background-color: #D9D9D9;
+	padding: 11px 0 11.5px 18px;
+	border-radius: 42px;
+	font-size: 10px;
+	line-height: 12px;
+	border: none;
+}
+.mail_btn{
+	position: relative;
+	right: 32px;
+	/*bottom: 1px;*/
+	width: 126px;
+	background-color: #3A5669;
+	padding: 10px 0 10px;
+	border-radius: 48px;
+	font-size: 10px;
+	line-height: 12px;
+	font-weight: 400;
+	text-transform: uppercase;
+	border: 1.5px solid #D9D9D9;
 }
