@@ -116,6 +116,7 @@ ul{
 	padding: 10px 12px;
 	border: 1px solid #fff;
 	border-radius: 6px;
+	/*font-family: "Montserrat", sans-serif;*/
 }
 .header_title{
 	padding-top: 136px;
@@ -133,6 +134,7 @@ ul{
 	margin-top: 70px;
 	border-radius: 50px;
 	line-height: 20px;
+	font-family: "Montserrat", sans-serif;
 }
 .manufacture{
 	padding-top: 74px;
@@ -285,7 +287,15 @@ ul{
 		gap: 8px;
 	}
 }
-@media(max-width:940px){
+@media(max-width: 1000px){
+	.header_title{
+		padding-top: 100px;
+		width: 900px;
+		font-size: 70px;
+		font-weight: 700;
+		line-height: 90px;
+}
+@media(max-width: 940px){
 	.header_line{
 		width: 60%;
 	}
@@ -296,11 +306,11 @@ ul{
 	}
 	.menu_close_btn{
 		position: absolute;
-		top: 20px;
-		right: 20px;
+		top: 15px;
+		right: 15px;
 	}
 	.mobile_nav{
-		background-color: red;
+		background-color: #C0C0C0;
 	}
 	.menu_list{
 		transform: translateY(-100%);
@@ -308,16 +318,20 @@ ul{
 		top: 0;
 		left: 0;
 		right: 0;
-		width: 350px;
+		width: 450px;
 		margin: 0 auto;
 		background-color: #fff;
 		color: #000;
 		display: block;
 		text-align: center;
 		transition: transform .6s ease;
+		padding-top: 60px;
 	}
 	.menu_list.menu_list_open{
 		transform: translateY(0%);
+	}
+	.menu_item{
+		margin-bottom: 15px;
 	}
 	.mobile_nav,
 	.menu_close{
@@ -326,4 +340,56 @@ ul{
 	.header_contacts{
 		display: none;
 	}
+	.header_btn_mobile{
+		background-color: #3A5669;
+	}
+	.phone_mobile{
+		padding: 10px 0 10px;
+	}
+	.header{
+		height: 100%;
+	}
+	.title_btn{
+		margin-bottom: 20px;
+	}
+}
+@media(max-width: 800px){
+	.header_title{
+		padding-top: 60px;
+		width: 700px;
+		font-size: 50px;
+		font-weight: 700;
+		line-height: 70px;
+}
+@media(max-width: 590px){
+	.header_title{
+		padding-top: 40px;
+		width: 460px;
+		font-size: 40px;
+		font-weight: 700;
+		line-height: 60px;
+}
+@media(max-width: 450px){
+	.menu_list{
+		width: 300px;
+	}
+	.header_title{
+		padding-top: 30px;
+		width: 345px;
+		font-size: 30px;
+		font-weight: 700;
+		line-height: 40px;
+}
+}
+@media(max-width: 370px){
+	.header_title{
+		padding-top: 30px;
+		width: 320px;
+		font-size: 25px;
+		font-weight: 700;
+		line-height: 40px;
+}
+	.logo_text{
+		width: 150px;
+}
 }
