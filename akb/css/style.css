@@ -416,7 +416,7 @@ ul{
 	}
 @media(max-width: 450px){
 	.menu_list{
-		width: 300px;
+		width: 350px;
 	}
 	.header_title{
 		padding-top: 30px;
@@ -442,6 +442,9 @@ ul{
 @media(max-width: 375px){
 	.input_mail{
 	width: 150px;
+}
+.menu_list{
+	width: 320px;
 }
 }
 @media(max-width: 370px){
