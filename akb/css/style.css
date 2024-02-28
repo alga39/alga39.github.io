@@ -384,6 +384,9 @@ ul{
 		font-weight: 700;
 		line-height: 70px;
 }
+.manufacture{
+	padding-bottom: 25px;
+}
 .manufacture_list{
 		grid-template-columns: repeat(1, 1fr);
 	}
@@ -429,6 +432,12 @@ ul{
 .manufacture{
 	padding-bottom: 15px;
 }
+.manufacture_item{
+	width: 100%;
+}
+}
+@media(max-width: 429px){
+
 }
 @media(max-width: 375px){
 	.input_mail{
