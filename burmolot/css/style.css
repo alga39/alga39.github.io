@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../fonts/NotoSans.woff2') format('woff2'),
+        url('NotoSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regular.woff2') format('woff2'),
+        url('Inter-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RoadRadio';
+    src: url('../fonts/RoadRadio.woff2') format('woff2'),
+        url('RoadRadio.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+html{
+	box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+	box-sizing: inherit;
+}
+body{
+	margin: 0;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+ul{
+	list-style: none;
+	margin-block-start: 0;
+  	margin-block-end: 0;
+  	padding-inline-start: 0;
+}
+h1, p{
+	margin-block-start: 0;
+  margin-block-end: 0;
+}
+button{
+	padding: 0;	
+	border: none;
+	background-color: transparent;
+}
+.container{
+	max-width: 1040px;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.header_line{
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	background: linear-gradient(0.00deg, rgb(0, 129, 197),rgb(2, 87, 147) 100%);
+}
+.top{
+	height: 35px;
+}
+.bottom{
+	height: 46px;
+}
+.header_line_list{
+	display: flex;
+	justify-content: center;
+	gap: 14px;
+	color: #fff;
+	text-align: center;
+	font-family: Inter;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 14px;
+	text-transform: uppercase;
+}
+.header_line_list_item{
+	width: 88px;
+	border: 1px solid #fff;
+	border-radius: 15px 0 15px 0;
+	margin: 4px 0 4px 0;
+	padding: 6.5px 0 6.5px 0;
+}
+.header_inner{
+	margin: 10px 0;
+	display: flex;
+	justify-content: center;
+	justify-content: space-between;
+	align-items: center;
+}
+.header_inner_phone{
+	font-family: Arial;
+	font-weight: 700;
+	color: #337AB7;
+	font-size: 15px;
+	line-height: 24px;
+	text-align: center;
+}
+.header_inner_contact{
+	display: flex;
+	gap: 30px;
+	font-family: Arial;
+	font-weight: 400;
+	color: #fff;
+	font-size: 15px;
+	line-height: 40px;
+}
+.header_inner_contact_link{
+	border-radius: 20px;
+	background-color: #0082C6;
+	padding: 0 30px;
+}
+.header_inner_lang{
+	display: flex;
+	gap: 5px;
+}
+.header_inner_src{
+	display: block;
+	height: 100%;
+}
+.header_lang_list{
+	font-family: Arial;
+	font-weight: 400;
+	color: #0082C6;
+	font-size: 12px;
+	line-height: 18px;
+	background-color: #EEEEED;
+	padding: 3px 10px;
+}
+.header_lang_list:hover{
+	color: #fff;
+	background-color: #0082C6;
+}
+.header_line-bottom{
+	padding: 16px 0;
+}
+.header_line-bottom_list{
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	font-family: RoadRadio;
+	color: #FEFFFF;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 14.13px;
+	text-transform: uppercase;
+}
+.main{
+	background-image:  linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	opacity: ;
+	min-height: 730px;
+	padding-top: 85px;
+}
+.main_line{
+	border-top: 3px solid #21A1E4;
+	width: 105px;
+}
+.main_title{
+	font-family: RoadRadio;
+	font-size: 55px;
+	font-weight: 400;
+	line-height: 70px;
+	color: #fff;
+	padding-top: 15px;
+}
+.main_text{
+	width: 850px;
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #fff;
+	padding-top: 10px;
+}
+.main_link{
+	margin-top: 27px;
+}
+.main_link_btn{
+	font-family: Arial;
+	font-size: 16px;
+	text-align: center;
+	font-weight: 700;
+	line-height: 18px;
+	color: #fff;
+	padding: 12px 45px;
+	border-radius: 30px;
+	background-color: #0082C6;
+}
+.advantage{
+	margin-top: 89px;
+}
+.advantage_list{
+	height: 131px;
+	display: flex;
+	justify-content: space-between;
+	border: 2px solid #EBEBF099;
+	border-radius: 20px 20px 0 0;
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 18.4px;
+	color: #fff;
+}
+.advantage_list_item{
+	padding: 21px 0 0 22px;
+	border-left: 2px solid #EBEBF099;
+}
+.advantage_text{
+	padding-top: 12px;
+	width: 162px;
+}
