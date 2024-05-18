@@ -1,3 +1,13 @@
+const menuBtn=document.querySelector('.menu_btn');
+const menuClose=document.querySelector('.menu_close');
+const menuList=document.querySelector('.header_line-bottom_list');
+menuBtn.addEventListener('click', ()=>{
+  menuList.classList.toggle('header_line-bottom_list_open');
+});
+menuClose.addEventListener('click',()=>{
+  menuList.classList.remove('header_line-bottom_list_open');
+});
+
 const swiperAbout = new Swiper(".blog_slider", {
       slidesPerView: 2,
       spaceBetween: 20,
