@@ -16,7 +16,20 @@ const swiperAbout = new Swiper(".blog_slider", {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+   breakpoints: {
+    640: {
+      slidesPerView: 2
+    },
+    550: {
+      slidesPerView: 1,
+    },
+     410: {
+      slidesPerView: 1,
+    },
+  },
+ 
     });
+  
 
 $(document).ready(function(){
   $('.sliders').slick(
