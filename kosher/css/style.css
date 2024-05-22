@@ -69,17 +69,137 @@
   font-weight: 900;
   font-style: italic;
 }
-.itim-regular {
-  font-family: "Itim", cursive;
+.balsamiq-sans-regular {
+  font-family: "Balsamiq Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-.outfit-<uniquifier> {
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
+
+.balsamiq-sans-bold {
+  font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 700;
   font-style: normal;
 }
+
+.balsamiq-sans-regular-italic {
+  font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.balsamiq-sans-bold-italic {
+  font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+.montserrat-alternates-thin {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.montserrat-alternates-extralight {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.montserrat-alternates-light {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.montserrat-alternates-regular {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-alternates-medium {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.montserrat-alternates-semibold {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.montserrat-alternates-bold {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.montserrat-alternates-extrabold {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.montserrat-alternates-black {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.montserrat-alternates-thin-italic {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.montserrat-alternates-extralight-italic {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.montserrat-alternates-light-italic {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.montserrat-alternates-regular-italic {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.montserrat-alternates-medium-italic {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.montserrat-alternates-semibold-italic {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.montserrat-alternates-bold-italic {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.montserrat-alternates-extrabold-italic {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.montserrat-alternates-black-italic {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
 
 html{
   box-sizing: border-box;
@@ -199,7 +319,7 @@ h1, h2, h3, h4, p{
   color: #F78914; 
 }
 .header_contact_link{
-  font-family: Outfit;
+  font-family: Montserrat Alternates;
   font-size: 15px;
   font-weight: 500;
   line-height: 19px;
@@ -249,7 +369,6 @@ h1, h2, h3, h4, p{
   margin-right: 10px;
   color: #F78914; 
 }
-/* for link in menu*/ 
 .top_menu{
   display: flex;
   font-family: Arial;
@@ -263,7 +382,7 @@ h1, h2, h3, h4, p{
   transition: .2s ease;
 }
 .common_title{
-  font-family: Roboto;
+  font-family: Balsamiq Sans;
   font-size: 58px;
   font-weight: 400;
   text-align: center;
@@ -303,6 +422,77 @@ h1, h2, h3, h4, p{
   padding: 30px 30px;
   color: #ff6900;
 }
+.news{
+  margin-top: 40px;
+}
+.news_box{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+.news_box_item{
+  border-radius: 25px;
+  background: #F7F6F1;
+  padding: 30px;
+  display: block;
+}
+.news_box_img{
+  width: 100%;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+.news_box_date{
+  font-family: Balsamiq Sans;
+  font-size: 15px;
+  color: #F78914;
+  text-transform: uppercase;
+}
+.news_box_title{
+  font-family: Balsamiq Sans;
+  font-size: 25px;
+  color: #232323;
+  padding-top: 20px;
+  display: block;
+}
+.news_box_title:hover{
+  color: #ea7c08;
+  transition: .2s ease;
+}
+.news_box_btn{
+  font-family: Montserrat Alternates;
+  font-size: 16px;
+  font-weight: 600;
+  color: #232323;
+  text-align: center;
+  padding: 10px 25px;
+  margin-top: 60px;
+  border: 1px solid #db7407;
+  border-radius: 40px; 
+  display: inline-block;
+}
+.news_box_btn:hover{
+  transition: .4s ease;
+  color: #fff;
+  background-color: #db7407;
+}
+.news_inner{
+  margin-top: 150px;
+}
+.news_inner_img{
+  width: 100%;
+}
+.news_inner_text{
+  font-family: Montserrat Alternates;
+  font-size: 16px;
+  color: #687693;
+}
+.p_strong{
+  display: inline-block;
+  margin: 20px 0;
+  font-weight: 600;
+}
+
 /*.sub_menu{
   min-width: 200px;
   position: absolute;
