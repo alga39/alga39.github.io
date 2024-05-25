@@ -1,0 +1,324 @@
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+.kurale-regular {
+  font-family: "Kurale", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.cormorant-infant-light {
+  font-family: "Cormorant Infant", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.cormorant-infant-regular {
+  font-family: "Cormorant Infant", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cormorant-infant-medium {
+  font-family: "Cormorant Infant", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.cormorant-infant-semibold {
+  font-family: "Cormorant Infant", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.cormorant-infant-bold {
+  font-family: "Cormorant Infant", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cormorant-infant-light-italic {
+  font-family: "Cormorant Infant", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.cormorant-infant-regular-italic {
+  font-family: "Cormorant Infant", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.cormorant-infant-medium-italic {
+  font-family: "Cormorant Infant", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.cormorant-infant-semibold-italic {
+  font-family: "Cormorant Infant", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.cormorant-infant-bold-italic {
+  font-family: "Cormorant Infant", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+html{
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+  box-sizing: inherit;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+body{
+  margin: 0;
+  font-family: Roboto;
+}
+button{
+  padding: 0; 
+  border: none;
+  background-color: transparent;
+}
+ul{
+  list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+h1, h2, h3, h4, p{
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.container{
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.header{
+  background-color: #F7F6F1;
+}
+.header_inner{
+  display: flex;
+  align-items: center;
+}
+.common_title{
+  font-family: Kurale;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+.main{
+  margin-top: 30px;
+}
+.main_box_title_text{
+  font-family: Cormorant Infant;
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+.header_inner_title{
+  width: 100%;
+}
+.main_box{
+  display: flex;
+  gap: 20px;
+}
+.main_menu{
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.main_menu_list{
+  position: relative;
+  background-color: #F7F6F1;
+  width: 250px;
+  height: 35px;
+  margin-bottom: 5px;
+}
+.main_menu_link{
+  font-family: Roboto;
+  font-size: 15px;
+  padding: 0 20px;
+}
+.link_bg{
+  width: 70px;
+  height: 35px;
+  position: absolute;
+  background-color: #F78914;
+  color: #fff;
+  z-index: 2;
+}
+.link_bg i{
+  position: relative;
+}
+.link_title{
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+}
+.link_title:hover .icon{
+  transform: rotate(360deg);
+}
+.main_menu_list:hover .link_bg{
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  background-color: #F78914;
+}
+.main_menu_list:hover a{
+  font-weight: 600;
+  transition: all 0.5s ease-in-out;
+}
+.icon{
+  position: relative;
+  width: 70px;
+  height: 35px;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_box_catalog_inner{
+  position: relative;
+  display: flex;
+  grid-column: 1/2;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+}
+.main_box_catalog_inner::after{
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 750px;
+  height: 1px;
+  background-color: #F78914;
+}
+.main_box_catalog_list{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.main_box_catalog_item{
+  font-family: Roboto;
+  border: 1px solid #F78914;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 10px 0 10px;
+}
+.main_box_catalog_item:hover{
+  box-shadow: 1px 1px 4px black;
+}
+.main_box_catalog_list_img{
+  border-radius: 5px;
+  width: 100%;
+}
+.main_box_catalog_item_title{
+  text-align: center;
+  font-weight: 600;
+  display: inline-block;
+}
+.main_box_catalog_item_descr{
+  color: #687693;
+  display: inline-block;
+  margin-top: 10px;
+}
+.main_box_catalog_link{
+  font-weight: 600;
+  text-align: center;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 40px 0 20px; 
+  background-color: #F78914;
+}
+.main_box_catalog_link:hover{
+  color: #fff;
+}
+.main_product{
+  display: flex;
+  gap: 20px;
+}
+.main_product_title{
+  font-size: 24px;
+  font-weight: 600;
+}
+.main_product_text{
+  margin-top: 30px;
+}
