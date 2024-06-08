@@ -115,3 +115,125 @@ ul{
 	border-radius: 10px;
 	background-color: #FF691D	;
 }
+.category1{
+	margin-top: 50px;	
+}
+.category1_inner{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 20px;	
+}
+.category1_inner_list{
+	background-color: #A467FF;
+	border: none;
+	border-radius: 10px;
+}
+.category1_inner_list:hover{
+	background-color: #9A62EF;
+	transition: .3s ease;
+}
+.category1_link{
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 600;
+	color: #fff;
+}
+.category2{
+	margin-top: 25px;
+}
+.category2_inner{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	gap: 20px;
+}
+.category2_inner_list{
+	display: flex;
+	justify-content: space-between;
+}
+.category2_link{
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 600;
+}
+.category2_link:hover{
+	color: #FF0000;
+	transition: .3s ease;
+}
+.recomendation{
+	margin-top: 50px;
+}
+.recomendation_title{
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 16px;
+}
+.recomendation_inner{
+	margin-top: 25px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+}
+.recomendation_img{
+	width: 100%;
+}
+.recomendation_inner_list_img{
+	position: relative;
+}
+.img_fav{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 4;
+}
+.recomendation_inner_list_text{
+	background-color: #F9F9F9;
+	padding: 15px 10px;
+	margin-top: -4px;
+}
+.recomendation_inner_list_text:hover{
+	background-color: #A467FF;
+}
+.recomendation_inner_list_text:hover a{
+	color: #fff;
+}
+.recomendation_inner_list_text:hover .recomendation_inner_descr{
+	color: #F9F9F9;
+}
+.recomendation_inner_list_text:hover .recomendation_inner_address{
+	color: #D3B9FB;
+}
+.recomendation_link_text{
+	font-size: 22px;
+	line-height: 28px;
+	font-weight: 800;
+	color: #1E1E1E;
+}
+.recomendation_inner_descr,
+.recomendation_inner_address{
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 600;
+	margin-top: 2px;
+}
+.recomendation_inner_descr{
+	color: #1E1E1E;
+}
+.recomendation_inner_address{
+	color: #929292;
+}
+.recomendation_more_link{
+	background-color: #1B1B1B;
+	border-radius: 10px;
+	margin-top: 50px;
+	padding: 15px 0;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 18px;
+	color: #fff;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
