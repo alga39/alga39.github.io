@@ -389,3 +389,108 @@ ul{
 	margin-top: 30px;
 	margin-right: 20px;
 }
+.recomnedation_job_inner{
+	margin-top: 25px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+}
+.recomnedation_job_inner_list{
+	border-radius: 10px;
+	background-color: #f9f9f9;
+	padding: 25px 25px 35px 25px;
+}
+.recomnedation_job_inner_list:hover{
+	background-color: #7018e6;
+	transition: .3s ease;
+}
+.recomnedation_job_inner_list:hover .recomnedation_job_inner_list_title{
+	color: #fff;
+}
+.recomnedation_job_inner_list:hover .recomendation_job_inner_list_salary{
+	color: #fff;
+}
+.recomnedation_job_inner_list:hover .recomnedation_job_inner_list_compamny_name{
+	color: #fff;
+}
+.recomnedation_job_inner_list:hover .recomendation_job_inner_list_city{
+	color: #fff;
+}
+.recomnedation_job_inner_list:hover .recomendation_job_inner_list_city{
+	color: #fff;
+}
+.recomnedation_job_inner_list:hover .recomendation_job_inner_list_text{
+	color: #fff;
+}
+.recomnedation_job_inner_list:hover .recomendation_job_btn_contact{
+	color: #fff;
+}
+.recomnedation_job_inner_list:hover .recomendation_job_btn_contact{
+	color: #fff;
+	border: 1px solid #fff;
+}
+.recomnedation_job_inner_list_title{
+	color: #7018E6;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 800;
+}
+.recomendation_job_inner_list_salary{
+	color: #2A3137;
+	font-size: 24px;
+	line-height: 28px;
+	margin-top: 5px; 
+}
+.recomnedation_job_inner_list_compamny{
+	display: flex;
+	margin-top: 20px;
+	align-items: center;
+}
+.recomnedation_job_inner_list_compamny_name{
+	color: #2A3137;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 600;
+	margin-right: 20px;
+}
+.recomendation_job_inner_list_city{
+	color: #2A3137;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 200;
+}
+.recomnedation_job_inner_list_skill{
+	display: flex;
+	margin-top: 20px;
+}
+.recomendation_job_inner_list_text{
+	color: #2A3137;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 600;
+	margin-left: 10px;
+}
+.recomendation_job_inner_list_link{
+	display: flex;
+	margin-top: 20px;
+}
+.recomendation_job_btn_response{
+	font-size: 14px;
+	color: #fff;
+	background-color: #ff691d;
+	border-radius: 10px;
+	padding: 10px 10px;
+	margin-right: 20px;
+}
+.recomendation_job_btn_response:hover{
+	color: #E5E5E5;
+	transition: .3s ese;
+	background-color: #e55e1b;
+}
+.recomendation_job_btn_contact{
+	font-size: 14px;
+	font-weight: 600;
+	padding: 10px 32px;
+	border: 1px solid #000;
+	border-radius: 10px;
+}
