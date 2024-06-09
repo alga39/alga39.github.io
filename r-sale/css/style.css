@@ -195,15 +195,19 @@ ul{
 }
 .recomendation_inner_list_text:hover{
 	background-color: #A467FF;
+	transition: .3s ease;
 }
 .recomendation_inner_list_text:hover a{
 	color: #fff;
+	transition: .3s ease;
 }
 .recomendation_inner_list_text:hover .recomendation_inner_descr{
 	color: #F9F9F9;
+	transition: .3s ease;
 }
 .recomendation_inner_list_text:hover .recomendation_inner_address{
 	color: #D3B9FB;
+	transition: .3s ease;
 }
 .recomendation_link_text{
 	font-size: 22px;
@@ -236,4 +240,152 @@ ul{
 	width: 100%;
 	display: flex;
 	justify-content: center;
+}
+.recomendation_more_link:hover{
+	color: #f9f9f9;
+	transition: .3s ease;
+}
+.recomendation_adv{
+	background-color: #7019e7;
+	border-radius: 10px;
+	margin-top: 60px;
+	padding-left: 10px;
+	padding-bottom: 15px;
+}
+.recomendation_adv_text{
+	font-size: 64px;
+	line-height: 16px;
+	font-weight: 600;
+	color: #fff;
+	padding-top: 65px;
+	text-align: center;
+}
+.recomendation_adv_btn{
+	background-color: #f9f9f9;
+	border-radius: 10px;
+	font-size: 18px;
+	line-height: 16px;
+	font-weight: 600;
+	padding: 15px 0;
+	width: 150px;
+	text-align: center;
+	color: #c3c3c3;
+	display: block;
+}
+.recomendation_adv_btn:hover{
+	color: #000;
+	transition: .3s ease;
+}
+.recomendation_service_inner{
+	margin-top: 25px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+}
+.recomendation_service_inner_list{
+	border-radius: 10px;
+	background-color: #f9f9f9;
+	display: flex;
+	gap: 25px;
+	padding: 25px 25px 35px 25px;
+}
+.recomendation_service_inner_list:hover{
+	background-color: #A467FF;
+	transition: .3s ease;
+}
+.recomendation_service_inner_list:hover .recomnedation_service_inner_list_descr_title_text{
+	color: #fff;
+	transition: .3s ease;
+}
+.recomendation_service_inner_list:hover .recomnedation_service_inner_list_descr_city{
+	color: #fff;
+	transition: .3s ease;
+}
+.recomendation_service_inner_list:hover .recomnedation_service_inner_list_descr_text{
+	color: #fff;
+	transition: .3s ease;
+}
+.recomendation_service_inner_list:hover .recomnedation_service_inner_list_descr_price_text{
+	color: #fff;
+	transition: .3s ease;
+}
+.recomendation_service_inner_list:hover .recomnedation_service_inner_list_descr_price_text span{
+	color: #fff;
+	transition: .3s ease;
+}
+.recomendation_service_inner_list_cover_mark{
+	display: flex;
+	gap: 10px;
+	margin-top: 11px;
+}
+.recomendation_service_inner_mark_text{
+	font-size: 21px;
+	line-height: 28px;
+	font-weight: 800;
+}
+.recomendation_service_inner_mark_total{
+	font-size: 11px;
+	line-height: 17px;
+	font-weight: 600;
+	color: #ff691d;
+}
+.recomnedation_service_inner_list_descr_title{
+	display: flex;
+	justify-content: space-between;
+}
+.recomnedation_service_inner_list_descr_title_text{
+	width: 260px;
+	font-size: 22px;
+	line-height: 28px;
+	font-weight: 800;
+}
+.recomnedation_service_inner_list_descr_title_visit,
+.recomnedation_service_inner_list_descr_city,
+.recomnedation_service_inner_list_descr_text{
+	font-size: 11px;
+	line-height: 20px;
+	font-weight: 600;
+}
+.recomnedation_service_inner_list_descr_title_visit{
+	color: #CACACA;
+	text-align: right;
+}
+.recomnedation_service_inner_list_descr_city{
+	color: #ff691d;
+	margin-top: 10px;
+}
+.recomnedation_service_inner_list_descr_text{
+	margin-top: 10px;
+}
+.recomnedation_service_inner_list_more_link{
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 19px;
+	color: #7018e6;
+}
+.recomnedation_service_inner_list_descr_price_text{
+	font-size: 13px;
+	font-weight: 800;
+	line-height: 20px;
+	color: #7926e7;
+	margin-top: 30px;
+}
+.recomnedation_service_inner_list_descr_price_text span{
+	color: #000;
+}
+.recomnedation_service_inner_list_descr_messanger{
+	display: flex;
+}
+.recomandation_service_messanger_btn{
+	background-color: #fff;
+	border: 1px solid #000;
+	border-radius: 10px;
+	padding: 9px 10px;
+	font-size: 12px;
+	font-weight: 800;
+	line-height: 20px;
+	display: flex;
+	gap: 10px;
+	margin-top: 30px;
+	margin-right: 20px;
 }
