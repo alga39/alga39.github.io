@@ -391,6 +391,7 @@ ul{
 }
 .recomnedation_job_inner{
 	margin-top: 25px;
+	margin-bottom: 140px;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 20px;
@@ -423,10 +424,10 @@ ul{
 	color: #fff;
 }
 .recomnedation_job_inner_list:hover .recomendation_job_btn_contact{
-	color: #fff;
+	/*color: #fff;*/
 }
 .recomnedation_job_inner_list:hover .recomendation_job_btn_contact{
-	color: #fff;
+	/*color: #fff;*/
 	border: 1px solid #fff;
 }
 .recomnedation_job_inner_list_title{
@@ -493,4 +494,42 @@ ul{
 	padding: 10px 32px;
 	border: 1px solid #000;
 	border-radius: 10px;
+}
+.recomendation_job_btn_contact:hover{
+	background-color: #E5E5E5;
+	color: #000;
+}
+.footer{
+	background-color: #242729;
+}
+.footer_info{
+	padding: 30px 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer_info_mod{
+	border-bottom: 1px solid #3D3F41;
+}
+.footer_info_inner{
+	display: flex;
+	gap: 50px;
+	color: #848587;
+}
+.footer_info_list_item{
+	padding-bottom: 5px;
+}
+.footer_info_link{
+	color: #848587;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 20px;
+}
+.footer_info_link:hover{
+	color: #CCCED1;
+	transition: .3s ease;
+}
+.footer_info_payment{
+	display: flex;
+	gap: 25px;
 }
