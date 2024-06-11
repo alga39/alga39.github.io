@@ -27,6 +27,12 @@ p{
 	margin-block-start: 0;
   margin-block-end: 0;
 }
+h1{
+	margin-inline-start: 0;
+  margin-inline-end: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
 button{
 	padding: 0;	
 	border: none;
@@ -115,6 +121,11 @@ ul{
 	border-radius: 10px;
 	background-color: #FF691D	;
 }
+.announcement_btn:hover{
+	color: #E5E5E5;
+	transition: .3s ease;
+	background-color: #e55e1b;
+}
 .category1{
 	margin-top: 50px;	
 }
@@ -152,6 +163,9 @@ ul{
 .category2_inner_list{
 	display: flex;
 	justify-content: space-between;
+	padding: 9px;
+	background-color: #F9F9F9;
+	border-radius: 10px;
 }
 .category2_link{
 	font-size: 16px;
@@ -485,7 +499,7 @@ ul{
 }
 .recomendation_job_btn_response:hover{
 	color: #E5E5E5;
-	transition: .3s ese;
+	transition: .3s ease;
 	background-color: #e55e1b;
 }
 .recomendation_job_btn_contact{
@@ -498,6 +512,7 @@ ul{
 .recomendation_job_btn_contact:hover{
 	background-color: #E5E5E5;
 	color: #000;
+	transition: .3s ease;
 }
 .footer{
 	background-color: #242729;
@@ -532,4 +547,172 @@ ul{
 .footer_info_payment{
 	display: flex;
 	gap: 25px;
+}
+/*ADVERT*/
+.path{
+	margin-top: 50px;
+}
+.path_inner_list{
+	display: flex;
+	gap: 10px;
+}
+.path_inner_list_item{
+	font-size: 12px;
+	font-weight: 200;
+}
+.path_link:hover{
+	font-weight: 400;
+}
+.product_inner{
+	margin-top: 30px;
+	display: flex;
+	gap: 30px;
+}
+.product_descr_title{
+	font-size: 27px;
+	font-weight: 800;
+}
+.fotorama{
+	margin-top: 30px;
+}
+.product_inner_price{
+	width: 100%;
+}
+.product_inner_price_box{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.product_inner_price_box_price_text{
+	font-size: 32px;
+	font-weight: 800;
+}
+.product_inner_price_box_favorite{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.product_inner_price_box_availability{
+	font-size: 14px;
+	margin-top: 14px;
+}
+.product_inner_price_box_availability span{
+	color: #02D15C;
+}
+.product_inner_price_box_seller{
+	font-size: 12px;
+	font-weight: 600;
+	margin-top: 10px;
+	padding: 7px 40px;
+	background-color: #CCECFF;
+	border-radius: 10px;
+	display: inline-block;
+}
+.product_inner_price_box_seller:hover{
+	background-color: #C4E1F2;
+	transition: .3s ease;
+}
+.product_inner_price_box_game{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+}
+.product_inner_price_box_game_text{
+	font-size: 24px;
+	text-transform: uppercase;
+}
+.product_inner_price_box_favorite-rate{
+	display: flex;
+	gap: 10px;
+	margin-top: 7px;
+}
+.product_inner_price_box_favorite_opinion_link{
+	font-size: 14px;
+}
+.product_inner_price_box_favorite_opinion_link, 
+.product_inner_price_box_company_link:hover{
+	font-weight: 600;
+}
+.product_inner_price_box_company_link{
+	margin-top: 7px;
+	font-size: 14px;
+	display: inline-block;
+}
+.product_inner_price_box_ask{
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+	position: relative;
+}
+.product_inner_price_box_ask_text{
+	font-size: 20px;
+	font-weight: 600;	
+}
+.ask_switch{
+	position: absolute;
+	right: 0;
+}
+input[type="checkbox"]{
+	position: relative;
+	width: 60px;
+	height: 30px;
+	-webkit-appearance:none;
+	outline: none;
+	background: red;
+	border-radius: 10px;
+	transition: .5s;
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+}
+input:checked[type="checkbox"]{
+		background: #D9D9D9;
+}
+input[type="checkbox"]:before{
+	content: '';
+	position: absolute;	
+	width: 30px;	
+	height: 30px;	
+	border-radius: 10px;
+	top: 0;
+	left: 0;
+	background: #A467FF;
+	transition: .5s;
+	transform: scale(1.1);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+input:checked[type="checkbox"]:before{
+	left: 30px;
+}
+.product_inner_price_box_chat{
+	width: 100%;
+	height: 130px;
+	margin-top: 20px;
+	background-color: #f2f1f0;
+	border-radius: 10px;
+}
+.product_inner_price_box_chat_btn,
+.product_inner_price_box_message_btn{
+	font-size: 16px;
+	font-weight: 600;
+	text-align: center;
+	color: #fff;
+	border-radius: 10px;
+	padding: 14px 0;
+	margin-top: 10px;
+	width: 100%;
+	display: block;
+}
+.product_inner_price_box_message_btn{
+	background-color: #21D771;
+}
+.product_inner_price_box_message_btn:hover{
+	background-color: #1EBC62;
+	transition: .3s ease;
+}
+.product_inner_price_box_chat_btn{
+	background-color: #7018E6;
+}
+.product_inner_price_box_chat_btn:hover{
+	background-color: #6216CC;
+	transition: .3s ease;
 }
