@@ -548,7 +548,7 @@ ul{
 	display: flex;
 	gap: 25px;
 }
-/*ADVERT*/
+/*----------------------ADVERT-----------------------------------------*/
 .path{
 	margin-top: 50px;
 }
@@ -715,4 +715,62 @@ input:checked[type="checkbox"]:before{
 .product_inner_price_box_chat_btn:hover{
 	background-color: #6216CC;
 	transition: .3s ease;
+}
+.characteristic_inner{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 80px;
+	margin-top: 10px;
+}
+.characteristic_inner_descr_title{
+	padding-top: 60px;
+	font-size: 22px;
+	font-weight: 800;
+}
+.characteristic_inner_descr_address_text{
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: 15px;
+}
+.characteristic_link{
+	font-weight: 400;	
+	color: #009CF0;
+	margin-left: 20px;
+}
+.characteristic_link:hover{
+	font-weight: 600;
+	color: #1E95CC;
+	transition: .3s ease;
+}
+
+.characteristic_inner_descr_box{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+.characteristic_inner_descr_box_list_item{
+	font-size: 16px;
+	color: #757575;
+}
+.characteristic_inner_descr_box_list_item span{
+	color: #000;
+}
+.characteristic_inner_descr_link{
+	color: #009CF0
+}
+.characteristic_inner_descr_link:hover{
+	font-weight: 600;
+	color: #1E95CC;
+	transition: .3s ease;
+}
+.characteristic_section_title{
+	padding-top: 20px;
+	font-size: 22px;
+	font-weight: 800;
+}
+.characteristic_section_text{
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 25px;
+	padding-top: 30px;
 }
