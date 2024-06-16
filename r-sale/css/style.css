@@ -22,6 +22,7 @@ body{
 a{
 	text-decoration: none;
 	color: inherit;
+	cursor: pointer;
 }
 label{
 	cursor: pointer;
@@ -1075,3 +1076,71 @@ border-radius: 10px;
 	transition: .3s ease;
 }
 /*----------------------end SEARCH---------------------------------------*/
+/*--------------------------CHATS----------------------------------------*/
+.chat_inner{
+	margin-top: 35px;
+	display: grid;
+	grid-template-columns: 	295px auto;
+	gap: 20px;
+}
+.chat_inner_user_info{
+	background-color: #f3f0f1;
+	border-radius: 20px;
+	padding: 30px;
+	margin-bottom: 20px;
+}
+.chat_inner_user_name{
+	font-size: 16px;
+}
+.chat_inner_user_rate{
+	margin-top: 7px;
+}
+.chat_inner_user_info_box{
+	margin-top: 30px;
+}
+.chat_inner_user_info_link{
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+	display: block;
+	margin-bottom: 10px;
+}
+.chat_inner_user_info_box_list_item:last-child .chat_inner_user_info_link{
+	margin-bottom: 0;
+}
+.chat_inner_user_info_link:hover{
+	color: #fe9161;
+	transition: .3s ease;
+}
+.chat_inner_msg_title{
+	font-size: 27px;
+	font-weight: 800;
+	padding-bottom: 15px;
+}
+.chat_inner_msg_list{
+	padding: 10px 35px;
+	background-color: #f3f0f1;
+	margin-bottom: 20px;
+}
+.chat_inner_msg_product_user{
+	display: flex;
+	font-size: 16px;
+}
+.chat_inner_msg_product_user_link{
+	font-weight: 600;
+	color: #fe9161;
+	margin-right: 30px;
+
+}
+.chat_inner_msg_product_link{
+	font-weight: 800;
+}
+.chat_inner_msg_product_link:hover{
+	color: #fe9161;
+	transition: .3s ease;
+}
+.chat_inner_msg_list_text{
+	margin-top: 15px;
+	font-size: 16px;
+}
+/*-------------------------end CHATS--------------------------------------*/
