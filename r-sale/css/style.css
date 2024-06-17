@@ -194,6 +194,11 @@ ul{
 	grid-template-columns: repeat(4, 1fr);
 	gap: 20px;
 }
+.recomendation_inner_tab{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
 .recomendation_img{
 	width: 100%;
 }
@@ -1086,7 +1091,7 @@ border-radius: 10px;
 .chat_inner_user_info{
 	background-color: #f3f0f1;
 	border-radius: 20px;
-	padding: 30px;
+	padding: 30px 30px 20px 30px;
 	margin-bottom: 20px;
 }
 .chat_inner_user_name{
@@ -1095,22 +1100,39 @@ border-radius: 10px;
 .chat_inner_user_rate{
 	margin-top: 7px;
 }
-.chat_inner_user_info_box{
+.tab_inner_user_info_box{
 	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: start;	
 }
-.chat_inner_user_info_link{
+.tab_inner_content{
+	position: relative;
+	/*min-height: 300px;*/
+}
+.tab_inner_content_list{
+	/*opacity: 0;*/
+	display: none;
+	/*position: absolute;*/
+	transition: opacity .3s ease;
+	width: 100%;
+}
+.tab_inner_content_list_active{
+	display: block;
+	opacity: 1;
+}
+.chat_inner_user_info_box_list_btn{
 	font-size: 16px;
 	font-weight: 600;
 	cursor: pointer;
-	display: block;
 	margin-bottom: 10px;
 }
-.chat_inner_user_info_box_list_item:last-child .chat_inner_user_info_link{
-	margin-bottom: 0;
-}
-.chat_inner_user_info_link:hover{
+.chat_inner_user_info_box_list_btn:hover{
 	color: #fe9161;
 	transition: .3s ease;
+}
+.chat_inner_user_info_box_list_btn_active{
+	color: red;
 }
 .chat_inner_msg_title{
 	font-size: 27px;
@@ -1121,6 +1143,7 @@ border-radius: 10px;
 	padding: 10px 35px;
 	background-color: #f3f0f1;
 	margin-bottom: 20px;
+	border: 1px solid red;
 }
 .chat_inner_msg_product_user{
 	display: flex;
@@ -1130,7 +1153,6 @@ border-radius: 10px;
 	font-weight: 600;
 	color: #fe9161;
 	margin-right: 30px;
-
 }
 .chat_inner_msg_product_link{
 	font-weight: 800;
@@ -1142,5 +1164,26 @@ border-radius: 10px;
 .chat_inner_msg_list_text{
 	margin-top: 15px;
 	font-size: 16px;
+}
+.recomendation_inner_sell{
+	margin: 20px 0 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.recomendation_sell_btn{
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+	padding: 17px 25px;
+	border-radius: 10px;
+	background-color: #25d36f;
+}
+.recomendation_sell_adv{
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+	padding: 17px 35px;
+	border-radius: 10px;
+	background-color: #BCB7B7;
 }
 /*-------------------------end CHATS--------------------------------------*/
