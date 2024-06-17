@@ -1186,4 +1186,26 @@ border-radius: 10px;
 	border-radius: 10px;
 	background-color: #BCB7B7;
 }
+.my_service_inner_tab{
+	margin-bottom: 15px;
+}
+.my_service_inner_title_text{
+	font-size: 16px;
+	font-weight: 800;
+	margin-bottom: 20px;
+}
+.my_service_inner_tab{
+	display: grid;
+	grid-template-columns: auto 170px;
+	gap: 20px;
+}
+.my_service_inner_btn{
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.my_service_btn{
+	text-align: center;
+}
 /*-------------------------end CHATS--------------------------------------*/
