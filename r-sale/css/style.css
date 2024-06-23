@@ -9,6 +9,7 @@
 }
 html{
 	box-sizing: border-box;
+	height: 100%;
 }
 *,
 *::after,
@@ -18,6 +19,10 @@ html{
 body{
 	margin: 0;
 	font-family: "Raleway", sans-serif;
+	height: 100%;
+}
+.main{
+	flex-grow: 1;
 }
 a{
 	text-decoration: none;
@@ -53,6 +58,11 @@ ul{
 	margin: 0 auto;
 	padding-left: 10px;
 	padding-right: 10px;
+}
+.wrapper{
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
 }
 .top{
 	background-color: #2B2B2B;
@@ -1103,7 +1113,13 @@ border-radius: 10px;
 .chat_inner{
 	margin-top: 35px;
 	display: grid;
-	grid-template-columns: 	295px auto;
+	grid-template-columns: 295px auto;
+	gap: 20px;
+}
+.chat_inner_mod{
+	margin-top: 35px;
+	display: grid;
+	grid-template-columns: auto 295px;
 	gap: 20px;
 }
 .chat_inner_user_info{
