@@ -28,7 +28,7 @@
 					<div class="top_menu_inner">
 						<div class="top_menu_func">
 							<img src="img/logo.png" alt="" class="top_menu_logo">
-						 	<a href="search.html" class="category_btn">Категории</a>
+						 	<button class="category_btn" id="category_btn">Категории</button>
 							<form action="" class="top_menu_form">
 								<input type="search" name="" class="top_menu_input">
 							</form>
@@ -37,7 +37,7 @@
 						<div class="top_menu_user">
 							<ul class="top_menu_list">
 								<li class="top_menu_item">
-									<a href="" class="top_menu_item_link">
+									<a href="user_account.html" class="top_menu_item_link">
 										<img src="img/msg_logo.svg" alt="" class="top_menu_item_img">
 									</a>
 								</li>
@@ -428,6 +428,99 @@
 				</div>
 			</section>
 		</main>
+		<!-- -------------------------------- PopUp ---------------------------------------------------->
+		
+	<div id="category_box" class="popup">
+
+		<div class="container">
+			<div class="popup_category">
+			<button id="popup_close" class="popup_close_img"><img src="img/popup_close.png"></button>
+				<div class="popup_categoru_btn">
+
+					<button class="popup_category_btn popup_category_btn_active" data-button="popup_content_1">Товары</button>
+					<button class="popup_category_btn" data-button="popup_content_2">Услуги</button>
+					<button class="popup_category_btn" data-button="popup_content_3">Недвижимость</button>
+					<button class="popup_category_btn" data-button="popup_content_4">Работа</button>
+				</div>
+				<div class="popup_category_list popup_category_list_active" id="popup_content_1">
+					
+					<div class="popup_category_list_item">
+						<button class="popup_category_list_btn popup_category_list_btn_active" data-button="popup_category_list_1">Смартфоны и фототехника</button>
+						<button class="popup_category_list_btn">Одежда</button>
+						<button class="popup_category_list_btn">Обувь</button>
+						<button class="popup_category_list_btn">Дом и сад</button>
+						<button class="popup_category_list_btn">Детские товары</button>
+						<button class="popup_category_list_btn">Красота и здоровье</button>
+						<button class="popup_category_list_btn">Бытовая техника</button>
+						<button class="popup_category_list_btn">Спорт и отдых</button>
+						<button class="popup_category_list_btn">Строительство и ремонт</button>
+						<button class="popup_category_list_btn">Мебель</button> 
+					</div>
+					<div class="popup_category_list_item_content popup_category_list_item_content_active" id="popup_category_list_1">
+						<a href="#" class="popup_category_list_item_content_title">Смартфоны и фототехника</a>
+						<div class="popup_content_inner">
+							<ul class="popup_content_inner_list">
+								<li class="popup_content_inner_list_item"><a href="#" class="popup_content_inner_link">Смартфоны</a></li>
+								<li class="popup_content_inner_list_item"><a href="#" class="popup_content_inner_link">Смарт-часы и браслеты</a></li>
+								<li class="popup_content_inner_list_item"><a href="#" class="popup_content_inner_link">Детские часы</a></li>
+								<li class="popup_content_inner_list_item"><a href="#" class="popup_content_inner_link">Сотовые телефоны</a></li>
+								<li class="popup_content_inner_list_item"><a href="#" class="popup_content_inner_link"></a></li>
+							</ul>
+							<ul class="popup_content_inner_list">
+								<li class="popup_content_inner_list_item"><a href="#" class="popup_content_inner_link">Стационарные сотовые телефоны</a></li>
+								<li class="popup_content_inner_list_item"><a href="#" class="popup_content_inner_link">Радиостанции</a></li>
+								<li class="popup_content_inner_list_item"><a href="#" class="popup_content_inner_link">Защита и поддержка для смартфонов</a></li>
+								<li class="popup_content_inner_list_item"><a href="#" class="popup_content_inner_link">Зарядка и подключение для смартфонов</a></li>
+								<li class="popup_content_inner_list_item"><a href="#" class="popup_content_inner_link">Прочие аксессуары для смартфонов</a></li>
+							</ul>
+							<ul class="popup_content_inner_list">
+								<li class="popup_content_inner_list_item"><a href="#" class="popup_content_inner_link">Тарифы операторов</a></li>
+								<li class="popup_content_inner_list_item"><a href="#" class="popup_content_inner_link">Запчасти для смартфона </a></li>
+								<li class="popup_content_inner_list_item"><a href="#" class="popup_content_inner_link">Аксессуары для смарт-часов и браслетов</a></li>
+								<li class="popup_content_inner_list_item"><a href="#" class="popup_content_inner_link">Аксессуары для радиостанций</a></li>
+								<li class="popup_content_inner_list_item"><a href="#" class="popup_content_inner_link">Антивирусы</a></li>
+							</ul>
+						</div>
+						<a href="#" class="popup_category_list_item_content_title">Планшеты, электронные книги</a>
+							<div class="popup_content_inner">
+							<ul class="popup_content_inner_list">
+								<li class="popup_content_inner_list_item"><a href="#" class="popup_content_inner_link">Планшеты</a></li>
+								<li class="popup_content_inner_list_item"><a href="#" class="popup_content_inner_link">Электронные книги</a></li>
+							</ul>
+							<ul class="popup_content_inner_list">
+								<li class="popup_content_inner_list_item"><a href="#" class="popup_content_inner_link">Цифровые блокноты</a></li>
+								<li class="popup_content_inner_list_item"><a href="#" class="popup_content_inner_link">Аксессуары для планшетов</a></li>
+							</ul>
+							<ul class="popup_content_inner_list">
+								<li class="popup_content_inner_list_item"><a href="#" class="popup_content_inner_link">Чехлы для электронных книг</a></li>
+								<li class="popup_content_inner_list_item"><a href="#" class="popup_content_inner_link">Тарифы операторв</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="popup_category_list" id="popup_content_2">
+					<div class="popup_category_list_item">
+						<button class="popup_category_list_btn">Автосервис</button>
+						<button class="popup_category_list_btn">Ремнт</button>
+						<button class="popup_category_list_btn">Образование</button>
+						<button class="popup_category_list_btn">Уход</button>
+						<button class="popup_category_list_btn">Строителььство</button>
+					</div>
+					<div class="popup_category_list_item_content">
+						<div class="pop_category_list_item_content_box">
+							<p>;jgf1</p>
+							<p>;jgf1</p>
+							<p>;jgf1</p>
+							<p>;jgf1</p>
+							<p>;jgf1</p>
+							<p>;jgf1</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<!-- -------------------------------- END PopUp ------------------------------------------------>
 		<footer class="footer">
 			<div class="container">
 				<div class="footer_info footer_info_mod">
@@ -491,5 +584,6 @@
 					</div>
 			</div>				
 		</footer>
+		<script src="js/main.js"></script>
 	</body>
 </html>

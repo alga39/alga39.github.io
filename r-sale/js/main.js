@@ -41,5 +41,81 @@ function open(evt){
 	});
 	tabTarget.classList.add('chat_inner_user_info_box_list_btn_active');
 	document.querySelector(`#${button}`).classList.add('tab_inner_content_list_active');
-
 }
+
+
+'use strict'
+const popupItem = document.querySelectorAll('.popup_category_btn');
+const popupContent = document.querySelectorAll('.popup_category_list');
+popupItem.forEach(function(element){
+	element.addEventListener('mousemove', open1);
+});
+function open1(evt){
+	const popupTarget = evt.currentTarget;
+	const button = popupTarget.dataset.button;
+	popupItem.forEach(function(item){
+		item.classList.remove('popup_category_btn_active');
+	});
+	popupContent.forEach(function(item){
+		item.classList.remove('popup_category_list_active');
+	});
+	popupTarget.classList.add('popup_category_btn_active');
+	document.querySelector(`#${button}`).classList.add('popup_category_list_active');
+}
+
+
+
+'use strict'
+const popupCategoryList = document.querySelectorAll('.popup_category_list_btn');
+const popupCategoryContent = document.querySelectorAll('.popup_category_list_item_content');
+popupCategoryList.forEach(function(element){
+	element.addEventListener('mousemove', open2);
+});
+function open2(evt){
+	const popupTarget = evt.currentTarget;
+	const button = popupTarget.dataset.button;
+	popupCategoryList.forEach(function(item){
+		item.classList.remove('popup_category_list_btn_active');
+	});
+	popupCategoryContent.forEach(function(item){
+		item.classList.remove('popup_category_list_item_content_active');
+	});
+	popupTarget.classList.add('popup_category_list_btn_active');
+	document.querySelector(`#${button}`).classList.add('popup_category_list_item_content_active');
+}
+
+
+document.getElementById('category_btn').addEventListener("click", function(){
+	document.getElementById('category_box').classList.toggle("open")
+})
+
+
+
+window.addEventListener('keydown', (e) => {
+	if (e.key === "Escape"){
+		document.getElementById("category_box").classList.remove("open")	
+	}
+})
+
+
+/*document.querySelector("#category_box .container_mod").addEventListener('click', event => {
+    event._isClickWithInModal = true;
+});
+document.getElementById("category_box").addEventListener('click', event => {
+    if (event._isClickWithInModal) return;
+    event.currentTarget.classList.remove('open');
+});*/
+
+document.getElementById('popup_close').addEventListener("click", function(){
+	document.getElementById('category_box').classList.remove("open")
+})
+
+
+document.querySelector("#category_box .container_mod").addEventListener('click', event => {
+    event._isClickWithInModal = true;
+});
+document.getElementById("category_box").addEventListener('click', event => {
+    if (event._isClickWithInModal) return;
+    event.currentTarget.classList.remove('open');
+});
+
