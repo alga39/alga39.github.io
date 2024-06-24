@@ -1467,7 +1467,8 @@ border-radius: 10px;
 .popup_content_inner{
 	display: grid;	
 	grid-template-columns: repeat(3, 1fr);
-	gap: 20px;
+	gap: 30px;
+	margin-bottom: 10px;
 }
 .popup_category_list_item_content_title{
 	font-size: 20px;
@@ -1479,7 +1480,7 @@ border-radius: 10px;
 	color: #8034E8;
 }
 .popup_content_inner_list_item{
-	font-size: 18px;
+	font-size: 16px;
 	margin-bottom: 6px;
 }
 .popup_content_inner_link:hover{
