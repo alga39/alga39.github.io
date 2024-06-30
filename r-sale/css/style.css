@@ -224,7 +224,6 @@ ul{
 .recomendation_title{
 	font-size: 22px;
 	font-weight: 600;
-	line-height: 16px;
 }
 .recomendation_inner{
 	margin-top: 25px;
@@ -272,14 +271,12 @@ ul{
 }
 .recomendation_link_text{
 	font-size: 22px;
-	line-height: 28px;
 	font-weight: 800;
 	color: #1E1E1E;
 }
 .recomendation_inner_descr,
 .recomendation_inner_address{
 	font-size: 14px;
-	line-height: 24px;
 	font-weight: 600;
 	margin-top: 2px;
 }
@@ -325,7 +322,6 @@ ul{
 	background-color: #f9f9f9;
 	border-radius: 10px;
 	font-size: 18px;
-	line-height: 16px;
 	font-weight: 600;
 	padding: 15px 0;
 	width: 150px;
@@ -1617,18 +1613,48 @@ border-radius: 10px;
 		gap: 10px;
 	}
 }
+@media(max-width: 620px){
+	.recomendation_adv_text{
+		font-size: 45px;
+		padding-top: 45px;
+	}
+}
+@media(max-width: 530px){
+	.recomendation_more_link,
+	.recomendation_adv{
+		margin-top: 20px;
+	}
+	.recomendation_adv_btn{
+		width: 110px;
+		padding: 7px 0;
+		font-size: 16px
+	}
+}
 @media(max-width: 510px){
 	.category2_inner{
 		grid-template-columns: auto auto auto;
 	}
 }
-@media(max-width: 460px){
-	.recomendation{
-		display: none;
-	}
+@media(max-width: 454px){
+		.recomendation_adv_text{
+			margin-left: 70px;
+			font-size: 35px;
+		}
 }
 @media(max-width: 370px){
 	.category1_inner{
 		grid-template-columns: repeat(1, 1fr);
+	}
+	.recomendation_title{
+		text-align: center;
+	}
+}
+@media(max-width: 360px){
+	.recomendation_inner{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.recomendation_adv_text{
+			font-size: 27px;
+			padding-top: 25px;
 	}
 }
