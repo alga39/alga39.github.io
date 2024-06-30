@@ -103,6 +103,7 @@ ul{
 .top_menu_func{
 	display: flex;
 	align-items: center;
+	width: 100%;
 }
 .top_menu_logo{
 	margin-right: 20px;
@@ -117,6 +118,9 @@ ul{
 	margin-right: 20px;
 	cursor: pointer;
 }
+/*.category1_inner_list_img{
+	width: 100%;
+}*/
 /*.category_btn_active{
 	color: #fff;
 	background-color: #1b1b1b;
@@ -134,21 +138,28 @@ ul{
 	align-items: center;
 	gap: 20px;
 }
+.top_menu_form{
+	width: 100%;
+	margin-right: 20px;
+}
 .top_menu_input{
 	border: none;
 	border-radius: 10px;
-	width: 400px;
+	/*width: 400px;*/
+	width: 100%;
 	height: 41px;
 	background: #F5F5F5 url(../img/search.svg) no-repeat 9px center;
-	margin-right: 20px;
+	/*margin-right: 20px;*/
 	padding-left: 30px;
 	font-size: 16px;
 	color: #808080;
+	display: block;
 }
 .announcement_btn{
 	font-size: 16px;
 	font-weight: 600;
 	color: #fff;
+	text-align: center;
 	padding: 10px 45px;
 	border-radius: 10px;
 	background-color: #FF691D;
@@ -1486,4 +1497,83 @@ border-radius: 10px;
 .popup_content_inner_link:hover{
 	color: #8034E8;
 }
+.menu_btn{
+	display: none;
+	width: 40px;
+	height: 20px;
+	background-color: inherit;
+	flex-direction: column;	
+	justify-content: space-between;	
+	position: relative;
+	z-index: 2;
+}
+.menu_btn span{
+	background-color: #ff691d;
+	height: 2px;
+	width: 100%;	
+}
+.menu_list{
+	display: none;
+}
 /*--------------------------END PopUp---------------------------------------------*/
+@media(max-width: 1188px){
+	.announcement_btn{
+		padding: 10px 30px;
+	}
+	.category_btn{
+		padding: 10px 20px;
+	}
+}
+@media(max-width: 1138px){
+	.announcement_btn,
+	.category_btn{
+		padding: 10px 10px;
+	}
+	.top_menu_list{
+		gap: 10px;
+	}
+	/*.top_menu_input{
+		width: 300px;
+	}*/
+
+}
+@media(max-width: 960px){
+	.category_btn,
+	.announcement_btn,
+	.top_menu_list{
+		display: none;	
+	}
+	.menu_btn{
+		display: flex;
+	}
+	.menu_list{
+		transform: translateY(-170%);
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		padding: 10px 10px;
+		width: 600px;
+		margin: 0 auto;
+		background-color: #fff;
+		display: block;
+		text-align: center;
+		transition: transform .3s ease;
+		border: 1px solid #ff691d;
+		border-radius: 10px;
+	}
+	.menu_item{
+		margin-bottom: 10px;
+	}
+	.menu_close_btn{
+		position: absolute;
+		top: -5px;
+		right: 20px;
+	}
+	.menu_list_open.menu_list{
+		transform: translateY(0%);
+	}
+	.top_menu_inner{
+		justify-content: inherit;
+	}
+}

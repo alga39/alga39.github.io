@@ -97,15 +97,6 @@ window.addEventListener('keydown', (e) => {
 	}
 })
 
-
-/*document.querySelector("#category_box .container_mod").addEventListener('click', event => {
-    event._isClickWithInModal = true;
-});
-document.getElementById("category_box").addEventListener('click', event => {
-    if (event._isClickWithInModal) return;
-    event.currentTarget.classList.remove('open');
-});*/
-
 document.getElementById('popup_close').addEventListener("click", function(){
 	document.getElementById('category_box').classList.remove("open")
 })
@@ -118,4 +109,3 @@ document.getElementById("category_box").addEventListener('click', event => {
     if (event._isClickWithInModal) return;
     event.currentTarget.classList.remove('open');
 });
-
