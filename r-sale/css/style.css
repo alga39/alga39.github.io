@@ -558,6 +558,10 @@ ul{
 }
 .footer{
 	background-color: #242729;
+	
+}
+.mobile_footer{
+	display: none;
 }
 .footer_info{
 	padding: 30px 25px;
@@ -1600,6 +1604,52 @@ border-radius: 10px;
 	.category_2_list_img{
 		display: none;
 	}
+	.footer{
+		display: none;
+	}
+	.mobile_footer{
+		border-top: 2px solid #F5F5F5;
+		display: block;
+		background-color: #fff;
+		padding: 5px 5px;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		z-index: 5;
+	}
+	.mobile_footer_inner{
+		display: flex;
+		justify-content: space-between;
+	}
+	.mobile_inner_box{
+		display: block;
+		text-align: center;
+	}
+	.mobile_logo{
+		width: 25px;
+		border-radius: 5px;
+	}
+	.mobile_text{
+		font-size: 12px;
+		font-weight: 600;
+		display: block;
+	}
+	.mobile_link:hover{
+		background-color: #F5F5F5;
+		border-radius: 5px;
+		transition: .3s ease;
+	}
+}
+@media(max-width: 850px){
+	.recomendation_service_inner{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.recomendation_service_inner_list{
+		padding: 15px;
+	}
+	.recomendation_service_inner_img{
+		width: 100%;
+	}
 }
 @media(max-width: 730px){
 
@@ -1611,6 +1661,15 @@ border-radius: 10px;
 	.recomendation_inner{
 		grid-template-columns: repeat(2, 1fr);
 		gap: 10px;
+	}
+}
+@media(max-width: 670px){
+	.recomnedation_job_inner{
+		grid-template-columns: repeat(1, 1fr);
+		
+	}
+	.recomnedation_job_inner_list{
+		padding: 15px;
 	}
 }
 @media(max-width: 620px){
