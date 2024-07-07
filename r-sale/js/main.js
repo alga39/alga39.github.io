@@ -88,6 +88,9 @@ function open2(evt){
 document.getElementById('category_btn').addEventListener("click", function(){
 	document.getElementById('category_box').classList.toggle("open")
 })
+document.getElementById('category_btn1').addEventListener("click", function(){
+	document.getElementById('category_box').classList.toggle("open")
+})
 
 
 
