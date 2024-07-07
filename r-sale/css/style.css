@@ -107,7 +107,8 @@ ul{
 	margin-right: 10px;
 }
 .top_menu_logo{
-	margin-right: 20px;
+	margin-right: 20px;	
+	display: flex;
 	width: 25%;
 }
 .category_btn{
@@ -1532,6 +1533,23 @@ border-radius: 10px;
 		gap: 10px;
 	}
 }
+@media(max-width: 1110px){
+	.new-product_list{
+		gap: 30px;
+	}
+	.new_product_detail_inner{
+		display: block;
+	}
+	.custom_new-detail_checkbox{
+		margin-bottom: 10px;
+	}
+	.new-product_list_page{
+		padding: 20px 20px 10px 20px;
+	}
+	.custom_new-product_checkbox {
+		padding: 10px 35px;
+	}
+}
 @media(max-width: 1090px){
 	.category1_link{
 		padding: 10px;
@@ -1544,9 +1562,6 @@ border-radius: 10px;
 	.category1_inner_list_img{
 		width: 15%;
 	}
-	/*.category2_inner{
-		grid-template-columns: repeat(5, 1fr);
-	}*/
 	.category2_link{
 		font-size: 14px;
 	}
@@ -1645,6 +1660,18 @@ border-radius: 10px;
 		transition: .3s ease;
 	}
 }
+@media(max-width: 890px){
+	.new-product_list{
+		gap: 20px;
+	}
+	.new-product_list_page{
+		padding: 10px;	
+	}
+	.custom_new-product_checkbox{
+		padding: 10px 20px;	
+		font-size: 16px;	
+	}
+}
 @media(max-width: 850px){
 	.recomendation_service_inner{
 		grid-template-columns: repeat(1, 1fr);
@@ -1671,6 +1698,14 @@ border-radius: 10px;
 		gap: 10px;
 	}
 }
+@media(max-width: 675px){
+	.custom_new-product_checkbox{
+		padding: 8px 10px;	
+	}
+	.new-product_list{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
 @media(max-width: 670px){
 	.recomnedation_job_inner{
 		grid-template-columns: repeat(1, 1fr);
@@ -1687,6 +1722,11 @@ border-radius: 10px;
 	.recomendation_adv_text{
 		font-size: 45px;
 		padding-top: 45px;
+	}
+}
+@media(max-width: 600px){
+	.category1{
+		margin-top: 20px;
 	}
 }
 @media(max-width: 555px){
@@ -1722,6 +1762,15 @@ border-radius: 10px;
 		grid-template-columns: repeat(1, 1fr);
 	}
 }
+@media(max-width: 470px){
+	.new-product_list{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.new-product_list_page{
+		display: block;
+		text-align: center;
+	}
+}
 @media(max-width: 454px){
 	.recomendation_adv_text{
 			margin-left: 70px;
@@ -1729,6 +1778,9 @@ border-radius: 10px;
 	}
 	.popup_category_list_active{
 		grid-template-columns: 40% auto;
+	}
+	.top_menu_input{
+		height: 35px;
 	}
 }
 @media(max-width: 415px){

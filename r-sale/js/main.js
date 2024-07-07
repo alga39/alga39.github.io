@@ -103,7 +103,9 @@ window.addEventListener('keydown', (e) => {
 document.getElementById('popup_close').addEventListener("click", function(){
 	document.getElementById('category_box').classList.remove("open")
 })
-
+document.getElementById('menu_btn').addEventListener("click", function(){
+	document.getElementById('category_box').classList.remove("open")
+})
 
 document.querySelector("#category_box .container_mod").addEventListener('click', event => {
     event._isClickWithInModal = true;
