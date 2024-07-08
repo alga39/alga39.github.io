@@ -1410,6 +1410,8 @@ border-radius: 10px;
 .popup.open{
 	visibility: visible;
 	opacity: 1;
+	overflow-y: auto;
+  height: 80vh;
 }
 .popup_category{
 	border-radius: 10px	;
@@ -1474,6 +1476,7 @@ border-radius: 10px;
 }
 .popup_category_list_item_content_active{
 	display: block;
+	overflow-y: auto;
 }
 .popup_content_inner{
 	display: grid;	
@@ -1882,6 +1885,11 @@ border-radius: 10px;
 	.recomendation_adv_text{
 			font-size: 27px;
 			padding-top: 25px;
+	}
+}
+@media(max-width: 350px){
+	.recomendation_logo_btn{
+		display: none;
 	}
 }
 @media(max-width: 340px){
