@@ -424,7 +424,6 @@ ul{
 .recomnedation_service_inner_list_descr_price_text{
 	font-size: 13px;
 	font-weight: 800;
-	line-height: 20px;
 	color: #7926e7;
 	margin-top: 30px;
 }
@@ -433,6 +432,7 @@ ul{
 }
 .recomnedation_service_inner_list_descr_messanger{
 	display: flex;
+	justify-content: space-between;
 }
 .recomandation_service_messanger_btn{
 	background-color: #fff;
@@ -441,11 +441,10 @@ ul{
 	padding: 9px 10px;
 	font-size: 12px;
 	font-weight: 800;
-	line-height: 20px;
 	display: flex;
 	gap: 10px;
 	margin-top: 30px;
-	margin-right: 20px;
+	/*margin-right: 20px;*/
 }
 .recomnedation_job_inner{
 	margin-top: 25px;
@@ -1171,6 +1170,7 @@ border-radius: 10px;
 	font-weight: 600;
 	cursor: pointer;
 	margin-bottom: 10px;
+	text-align: left;
 }
 .chat_inner_user_info_box_list_btn:hover{
 	color: #ff691d;
@@ -1516,6 +1516,14 @@ border-radius: 10px;
 	display: none;
 }
 /*--------------------------END PopUp---------------------------------------------*/
+@media(max-width: 1225px){
+	.recomendation_sell_btn{
+		padding: 15px 20px;
+	}
+	.recomendation_sell_adv{
+		padding: 15px 25px;	
+	}
+}
 @media(max-width: 1188px){
 	.announcement_btn{
 		padding: 10px 30px;
@@ -1531,6 +1539,10 @@ border-radius: 10px;
 	}
 	.top_menu_list{
 		gap: 10px;
+	}
+	.recomendation_sell_btn,
+	.recomendation_sell_adv{
+		padding: 10px 10px;
 	}
 }
 @media(max-width: 1110px){
@@ -1564,6 +1576,22 @@ border-radius: 10px;
 	}
 	.category2_link{
 		font-size: 14px;
+	}
+}
+@media(max-width: 980px){
+	.tab_inner_content{
+	margin-bottom: 55px;	
+		}
+		.recomendation_inner_sell{
+			display: block;	
+		}
+	.recomendation_sell_btn,
+	.recomendation_sell_adv{
+		display: block;
+		margin-bottom: 10px;		
+	}
+	.chat_inner{
+		grid-template-columns: auto auto;
 	}
 }
 @media(max-width: 960px){
@@ -1683,6 +1711,14 @@ border-radius: 10px;
 		width: 100%;
 	}
 }
+@media(max-width: 720px){
+	.recomendation_inner_tab{
+		grid-template-columns: repeat(2, 1fr);
+		}
+	.my_service_inner_tab{
+		grid-template-columns: auto auto;
+	}
+	}
 @media(max-width: 715px){
 	.popup_category_btn{
 		padding: 5px 15px;
@@ -1718,6 +1754,14 @@ border-radius: 10px;
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
+@media(max-width: 660px){
+	.recomendation_service_inner_list{
+		gap: 10px;
+	}
+	.my_service_inner_tab{
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
 @media(max-width: 620px){
 	.recomendation_adv_text{
 		font-size: 45px;
@@ -1727,6 +1771,9 @@ border-radius: 10px;
 @media(max-width: 600px){
 	.category1{
 		margin-top: 20px;
+	}
+	.recomendation_inner_tab{
+		grid-template-columns: repeat(1, 1fr);
 	}
 }
 @media(max-width: 555px){
@@ -1757,9 +1804,31 @@ border-radius: 10px;
 		grid-template-columns: auto auto auto;
 	}
 }
+@media(max-width: 495px){
+	.chat_inner_user_info{
+		padding: 20px 10px;
+	}
+}
 @media(max-width: 490px){
 	.popup_content_inner{
 		grid-template-columns: repeat(1, 1fr);
+	}
+}
+@media(max-width: 475px){
+	.tab_inner_content,
+	.my_service_inner_title,
+	.recomnedation_service_inner_list_descr,
+	.recomnedation_service_inner_list_descr_title,
+	.my_service_inner_btn{
+		width: 100%;
+	}
+	.recomnedation_service_inner_list_descr_title,
+	.recomnedation_service_inner_list_descr_messanger{
+		display: block;
+	}
+	.recomandation_service_messanger_btn,
+	.my_service_inner_btn{
+		margin-top: 10px;
 	}
 }
 @media(max-width: 470px){
@@ -1781,6 +1850,12 @@ border-radius: 10px;
 	}
 	.top_menu_input{
 		height: 35px;
+	}
+	.chat_inner_msg_title{
+		font-size: 20px;
+	}
+	.recomnedation_service_inner_list_descr_title_text{
+		font-size: 21px;
 	}
 }
 @media(max-width: 415px){
