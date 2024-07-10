@@ -1145,18 +1145,19 @@ border-radius: 10px;
 	margin-top: 7px;
 }
 .tab_inner_user_info_box{
+	margin-top: 30px;
 	display: flex;
 	flex-direction: column;
 	align-items: start;	
 }
-.tab_inner_user_info_box_desktop{
-margin-top: 30px;
-}
 .tab_inner_content{
 	position: relative;
+	/*min-height: 300px;*/
 }
 .tab_inner_content_list{
+	/*opacity: 0;*/
 	display: none;
+	/*position: absolute;*/
 	transition: opacity .3s ease;
 	width: 100%;
 }
@@ -1182,10 +1183,6 @@ margin-top: 30px;
 	font-size: 27px;
 	font-weight: 800;
 	padding-bottom: 15px;
-}
-.test_btn,
-.test_btn_list{
-	display: none;
 }
 .chat_inner_msg_list{
 	padding: 10px 35px;
@@ -1641,33 +1638,6 @@ margin-top: 30px;
 	.menu_list_open.menu_list_mobile{
 		transform: translateY(0%);
 	}
-	/*test_user_acc*/
-	.chat_inner_user{
-		display: none;
-	}
-	.test_btn{
-		display: flex;
-	}
-	.test_btn_list{
-		transform: translateX(-105%);
-		position: fixed;
-		top: 110px;
-		left: 0;
-		right: 0;
-		padding: 20px 20px;
-		width: 210px;
-		/*margin: 0 auto;*/
-		background-color: #f3f0f1;
-		display: block;
-		transition: transform .7s ease;
-		border-radius: 10px;
-		z-index: 5;
-		overflow-y: auto;
-	}
-	.test_btn_list_open.test_btn_list{
-		transform: translateX(0%);
-	}
-	/*END test_user_acc*/
 	.top_menu_inner{
 		justify-content: inherit;
 	}
@@ -1742,6 +1712,11 @@ margin-top: 30px;
 	}
 	.recomendation_service_inner_img{
 		width: 100%;
+	}
+}
+@media(max-width: 780px){
+	.recomendation_inner_tab{
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 @media(max-width: 720px){
@@ -1837,6 +1812,23 @@ margin-top: 30px;
 		grid-template-columns: auto auto auto;
 	}
 }
+@media(max-width: 500px){
+	.chat_inner{
+		display: block;	
+		margin-top: 10px;	
+	}
+	.chat_inner_user_name,
+	.chat_inner_user_rate{
+		display: none;	
+	}
+.tab_inner_user_info_box{
+		display: block;	
+		margin-top: 0;	
+	}
+.chat_inner_user_info_box_list_btn{
+	margin-right: 10px;	
+}
+}
 @media(max-width: 495px){
 	.chat_inner_user_info{
 		padding: 20px 10px;
@@ -1925,8 +1917,5 @@ margin-top: 30px;
 @media(max-width: 340px){
 	.popup_category_list_active{
 		grid-template-columns: 50% auto;
-	}
-	.mobile_text{
-		font-size: 11px;
 	}
 }
