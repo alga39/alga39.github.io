@@ -1690,6 +1690,14 @@ border-radius: 10px;
 		border-radius: 5px;
 		transition: .3s ease;
 	}
+	.path,
+	.fotorama{
+		margin-top: 10px;
+	}
+	.product_inner{
+		display: block;
+		margin-top: 10px;
+	}
 }
 @media(max-width: 890px){
 	.new-product_list{
@@ -1701,6 +1709,14 @@ border-radius: 10px;
 	.custom_new-product_checkbox{
 		padding: 10px 20px;	
 		font-size: 16px;	
+	}
+}
+@media(max-width: 920px){
+	.characteristic_inner{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.characteristic_inner_descr_title{
+		padding-top: 10px;
 	}
 }
 @media(max-width: 850px){
@@ -1783,6 +1799,9 @@ border-radius: 10px;
 	.recomendation_inner_tab{
 		grid-template-columns: repeat(1, 1fr);
 	}
+	.characteristic_inner_descr_box{
+		display: block;
+	}
 }
 @media(max-width: 555px){
 	.popup_category_btn{
@@ -1816,6 +1835,10 @@ border-radius: 10px;
 	.chat_inner{
 		display: block;	
 		margin-top: 10px;	
+	}
+	.chat_inner_mod{
+		display: block;
+		margin-top: 10px;
 	}
 	.chat_inner_user_name,
 	.chat_inner_user_rate{

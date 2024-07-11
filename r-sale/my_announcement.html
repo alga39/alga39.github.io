@@ -28,7 +28,7 @@
 				<div class="container">
 					<div class="top_menu_inner">
 						<div class="top_menu_func">
-								<a href="index.html"><img src="img/logo.png" alt="" class="top_menu_logo"></a>
+								<img src="img/logo.png" alt="" class="top_menu_logo">
 							 	<button class="category_btn" id="category_btn">Категории</button>
 								<form action="" class="top_menu_form">
 									<input type="search" name="" class="top_menu_input">
@@ -54,24 +54,27 @@
 								</li>
 							</ul>
 						</div>
-						<button class="menu_btn" id="menu_btn">
+						<!---------------------------------- BURGER menu ------------------------->
+							<button class="menu_btn" id="menu_btn">
 								<span></span>
 								<span></span>
 								<span></span>
 								<span></span>
 							</button>
-						<ul class="menu_list_mobile">
+							<ul class="menu_list_mobile">
+								<li class="menu_item"><a href="index.html" class="menu_link">На главную</a></li>
 								<li class="menu_close">
 									<button class="menu_close_btn">
 										<img src="img/popup_close.png" alt="">
 									</button>
 								</li>
 								<li class="menu_item"><a href="#" class="menu_link_btn_mobile" id="category_btn1">Категории</a></li>
-								<li class="menu_item"><a href="new_advert.html" class="menu_link">Разместить объявления</a></li>
+								<li class="menu_item"><a href="new_advert.html" class="menu_link">Разместить объявление</a></li>
 								<li class="menu_item"><a href="user_account.html" class="menu_link">Чаты</a></li>
 								<li class="menu_item"><a href="user_account.html" class="menu_link">Избранное</a></li>
 								<li class="menu_item"><a href="user_account.html" class="menu_link">Личный кабинет</a></li>
 							</ul>
+							<!-------------------------- END BURGER menu ----------------------------------------->
 					</div>
 				</div>
 			</section>
@@ -400,6 +403,30 @@
 			</div>
 			</div>
 			<!-- -------------------------------- END PopUp ------------------------------------------------>
+			<!---------------------------------- MOBILE footer ---------------------------------->
+			<section class="mobile_footer">
+				<div class="container">
+					<div class="mobile_footer_inner">
+						<a href="#" class="mobile_link"><div class="mobile_inner_box">
+							<img src="img/mobile_ic1.png" alt="" class="mobile_logo">
+							<p class="mobile_text">Избранное</p>
+						</div></a>
+						<a href="#" class="mobile_link"><div class="mobile_inner_box">
+							<img src="img/mobile_ic2.png" alt="" class="mobile_logo">
+							<p class="mobile_text">Объявление</p>
+						</div></a>
+						<a href="#" class="mobile_link"><div class="mobile_inner_box">
+							<img src="img/mobile_ic3.png" alt="" class="mobile_logo">
+							<p class="mobile_text">Сообщения</p>
+						</div></a>
+						<a href="user_account.html" class="mobile_link"><div class="mobile_inner_box">
+							<img src="img/mobile_ic4.png" alt="" class="mobile_logo">
+							<p class="mobile_text">Профиль</p>
+						</div></a>
+					</div>
+				</div>
+			</section>
+			<!----------------------------------- END MOBILE footer ------------------------------------->
 		<footer class="footer">
 			<div class="container">
 				<div class="footer_info footer_info_mod">
@@ -465,5 +492,6 @@
 		</footer>
 		</div>
 		<script src="js/main.js"></script>
+		<script src="js/adapt.js"></script>
 	</body>
 </html>
