@@ -1,0 +1,202 @@
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.raleway-<uniquifier> {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+html {
+	font-family: "Raleway", serif;
+}
+ul{
+	list-style: none;
+	margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+h1{
+	margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+p{
+	margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+a{
+	text-decoration: none;
+}
+body {
+	margin: 0;
+}
+.menu{
+	display: flex;
+	gap: 40px;
+	align-items: center;
+	font-weight: 20;
+	color: #000000;
+}
+.main{
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #E1EDE6;
+}
+.bird {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+/*	gap: 360px;*/
+}
+.container {
+	max-width: 1460px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 0 auto;
+}
+.produst_btn {
+	border: 1px solid #00FF00;
+	color: #008000 ;
+	padding: 10px 15px;
+	font-size: 20px;
+}
+.produst_btn:hover{
+	color: #ADFF2F;
+	border: 1px solid #32CD32;
+}
+.bird_text{
+	width: 540px;
+}
+.bird_text_titer{
+	font-size: 60px;
+	margin-bottom: 15px;
+	font-weight: 500;
+	max-width: 540px;
+}
+.bird_img-adapt{
+	width: 100%;
+}
+.bird_text_titer_mod {
+	color: #32CD32;	
+}
+.bird_text_inner{
+	color: #86928B;
+	font-weight: 500;
+	font-size: 18px;
+	margin-bottom: 40px;
+}
+.reproduction_header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.reproduction_header_btn{
+	display: flex;
+	gap: 40px;
+	font-size: 20px;
+}
+.reproduction_header_btn_list_link{
+	background-color: #E1EDE6;
+	color: #2C2D35;
+	padding: 10px;
+	border-radius: 20px;
+}
+.reproduction_header_btn_list_link:hover{
+	color: #F4F6F5;
+	background-color: #008500;
+	transition: color 0.5s ease, background-color 0.5s ease;
+}
+.reproduction_header_titler{
+	font-size: 30px;
+}
+.reproduction_inner{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+	margin-top:  15px;
+}
+.reproduction_inner_list{
+  /*max-width: 20rem;*/
+  /*padding: 1rem;
+  margin-top: 1rem;*/
+  padding: 20px;
+  background-color: #E1EDE6;
+}
+.reproduction-NAME_author{
+	color: #86928B;
+	font-weight: 600;
+	font-size: 18px;
+	margin-top: 15px;
+}
+.reproduction_inner_list_ing{
+	width: 100%;
+}
+.card-NAME_painting{
+	color: #2C2D35;
+	font-size: 30px;
+	font-weight: 600;
+	margin-top: 15px;
+}
+.card-NAME_painting_accessories{
+	color: #86928B;
+	font-weight: 600;
+	font-size: 18px;
+	margin-top: 3px;
+}
+.card-NAME_painting_price{
+	color: #598D66;
+	font-size: 24px;
+	font-weight: 600;
+	margin-top: 25px;
+	margin-bottom: 20px;
+}
+.reproduction_basket{
+	color: #598D66;
+	font-size: 20px;
+	font-weight: 600;
+	border: 1px solid #598D66;
+	padding: 10px 10px;
+	text-align: center;
+}
+@media(max-width: 950px){
+	.bird_text_titer{
+		font-size: 50px;
+	}
+}
+@media(max-width: 690px){
+	.bird_text_titer{
+		font-size: 40px;
+	}
+	.reproduction_inner{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media(max-width: 510px){
+	.main{
+		display: block;
+		text-align: center;
+	}
+	.main_logo{
+		border-bottom: 1px solid #C3D1C6;
+	}
+	.bird_text_titer{
+		font-size: 36px;
+	}
+	.bird_text_inner{
+		font-size: 16px;
+	}
+	.produst_btn{
+		font-size: 18px;
+	}
+	.reproduction_header{
+		display: block;
+	}
+	.reproduction_header_titler{
+		margin: 20px 0;
+	}
+}
