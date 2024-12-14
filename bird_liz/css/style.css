@@ -204,3 +204,11 @@ p{
 		margin: 20px 0;
 	}
 }
+	@media(max-width: 320px){
+	.bird_text_title{
+		font-size: 30px;
+	}
+	.reproduction_inner{
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
