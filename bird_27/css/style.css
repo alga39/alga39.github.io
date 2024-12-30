@@ -40,6 +40,38 @@ body {
 	font-weight: 20;
 	color: #000000;
 }
+.menu_btn{
+	display: none;
+	border: none;
+	width: 50px;
+	height: 40px;
+	background-color: inherit;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	z-index: 2;
+}
+.menu_btn span{
+	background-color: green;
+	height: 2px;
+	width: 100%;	
+}
+.menu-close{
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: inherit;
+	z-index: 1;
+}
+.menu-close.menu-open{
+	display: block;
+}
+.menu_close{
+	display: none;
+}
 .main{
 display: flex;
 justify-content: space-between;
@@ -199,6 +231,41 @@ background-color: #E1EDE6;
 	.reproduction_header_titler{
 		margin: 20px 0;
 	}
+}
+@media(max-width: 450px){
+	.menu{
+		transform: translateY(-100%);
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		background-color: #fff;
+		margin: 0 auto;
+		padding: 40px 0 0 0;
+		width: 300px;
+		display: block;
+		text-align: center;
+		transition: transform .5s ease;
+	}
+	.menu_list{
+		margin-bottom: 10px;	
+	}
+	.menu.menu_list_open{
+		transform: translateY(0%);
+	}
+	.menu_btn{
+		display: flex;
+	}
+	.menu_close_btn{
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+	.menu_close
+	{
+		display: block;
+	}	
 }
 @media(max-width: 320px){
 	.bird_text_title{
