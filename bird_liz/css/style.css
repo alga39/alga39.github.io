@@ -16,6 +16,7 @@ ul{
 	list-style: none;
 	margin-block-start:0;
 	margin-block-end:0;
+	padding-inline-start: 0px;
 }
 html{
 	font-family: "Raleway", sans-serif;
@@ -35,7 +36,8 @@ body{
 	display: none;
 	border: none;
 	width: 50px;
-	height: 40px;
+	height: 30px;
+	padding-top: 5px ;
 	background-color: inherit;
 	flex-direction: column;
 	justify-content: space-between;
@@ -208,13 +210,14 @@ p{
 	.reproduction_inner{
 		grid-template-columns: repeat(2, 1fr);
 	}
+	.reproduction_header_btn{
+		gap: 10px;
+	}
 }
-@media(max-width: 510px){
+@media(max-width: 635px){
 		.main{
 			display: block;
 			text-align: center;
-			
-
 		}
 		.main_logo{
 			border-bottom: 1px solid #C3D1C6;
@@ -229,7 +232,7 @@ p{
 		font-size: 18px;
 	}
 	.reproduction_header{
-		display: block;
+		flex-direction: column;
 	}
 	.reproduction_header_title{
 		margin: 20px 0;
@@ -269,13 +272,27 @@ p{
 	{
 		display: block;
 	}
+	.reproduction_inner{
+		grid-template-columns: repeat(1, 1fr);
+	}
 	
 }
 	@media(max-width: 320px){
 	.bird_text_title{
 		font-size: 30px;
 	}
-	.reproduction_inner{
-		grid-template-columns: repeat(1, 1fr);
+}
+@media(max-width: 390px){
+	.reproduction_header_btn{
+		gap: 5px;
 	}
+	.reproduction_list_link{
+		padding: 5px;
+		font-size: 14px;
+	}
+}
+@media(max-width: 330px){
+   .bird_text_title{
+   	font-size: 28px;
+   }
 }
