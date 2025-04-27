@@ -43,7 +43,7 @@ ul{
 	display: flex;
 	gap: 40px;
 	align-items: center;
-	font-weight: 20;
+	font-weight: 200;
 	color: #000000;
 }
 .menu_btn{
@@ -102,12 +102,16 @@ background-color: #E1EDE6;
 	padding: 10px 15px;
 	font-size: 20px;
 }
+.menu_list_link:hover{
+	color: #006400;
+	font-weight: 400;
+}
 .produst_btn:hover{
 	color: #ADFF2F;
 	border: 1px solid #32CD32;
 }
 .bird_text{
-	width: 540px;
+	max-width: 540px;
 }
 .bird_text_titer{
 	font-size: 60px;
@@ -239,7 +243,7 @@ background-color: #E1EDE6;
     margin-top: 50px;
 }
 .man_info_title_text{
-    width: 421px;
+    max-width: 421px;
     font-size: 40px;
     font-weight: 500;
     line-height: 40px;
